@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 *	Author: Luis Antonio Sánchez
 *	Version: 1.0
@@ -280,3 +279,68 @@ section {
 
 .text-white {
   color: white; }
+
+@media screen and (min-width: 320px) {
+  header {
+    border-bottom: solid #382f5b 10px;
+    width: 100%;
+    text-align: center; }
+    header .container {
+      background: #333; }
+
+  header #logo {
+    width: 66%;
+    display: inline-block;
+    text-align: left; }
+    header #logo img {
+      max-width: 49%;
+      width: 49%; }
+
+  header #global-navigation {
+    width: 32%;
+    display: inline-block; }
+    header #global-navigation ul {
+      display: block;
+      list-style: none;
+      padding: 0px;
+      margin: 0px; }
+      header #global-navigation ul li {
+        display: inline-block;
+        width: 30%;
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 500; }
+        header #global-navigation ul li a {
+          color: #382f5b;
+          text-decoration: none; }
+
+  .slider {
+    width: 100%; }
+    .slider img {
+      left: 0px;
+      top: 0px; }
+
+  #features {
+    width: 100%;
+    margin-top: 15px; }
+    #features .box {
+      margin-right: 1.7094%; }
+    #features .box:last-child {
+      margin-right: 0; }
+
+  .container {
+    margin: 0px auto;
+    max-width: 1000px;
+    padding: 0px 10px;
+    width: 100%;
+    box-sizing: border-box; }
+
+  .box {
+    display: inline-block;
+    height: 245px;
+    max-height: 245px;
+    margin-bottom: 20px;
+    padding: 1em;
+    vertical-align: top;
+    width: 32%;
+    box-sizing: border-box; } }

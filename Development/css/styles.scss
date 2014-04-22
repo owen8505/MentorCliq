@@ -272,7 +272,6 @@ header{
 }
 
 header #global-navigation{
-
 	ul{
 		display: none;
 		list-style: none;		
@@ -485,7 +484,93 @@ section{
 }
 
 // get grid styles in gear once viewport is large enough ========================================= /
-@media screen and (min-width: 20em) {
+@media screen and (min-width: 320px) {
 
+	header{	
+		border-bottom: solid $color-deep-purple 10px;
+		width: 100%;
+		text-align: center;
+		
+		.container{
+			background: #333;
+		}
+	}
+
+	header #logo{
+		width: columns(4);
+		display: inline-block;
+		text-align: left;
+		
+		img{
+			max-width: columns(3);
+			width: columns(3);
+		}
+	}
+	
+	header #global-navigation{
+		width: columns(2);
+		display: inline-block;
+		ul{
+			display: block;
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+
+			li{
+				display: inline-block;
+				width: 30%;
+				font-family: "Roboto";
+				font-size: 14px;
+				font-weight: 500;
+				
+				a{
+					color: $color-deep-purple;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	
+	.slider{
+		width: columns(6);
+
+		img{
+			left: 0px;
+			top: 0px;
+		}
+	}
+	
+	#features{
+		width: columns(6);
+		margin-top: 15px;
+		
+		.box{
+			margin-right: gutter(7);
+		}
+		
+		.box:last-child {
+			margin-right: 0;
+		}
+	}
+	
+	.container{
+		margin: 0px auto;
+		max-width: $max-width;
+		padding: 0px 10px;
+		width: columns(6);
+		@include border-box;
+	}
+	
+	.box{
+		display: inline-block;
+		height: 245px;
+		max-height: 245px;	
+		margin-bottom: 20px;
+		padding: 1em;
+		vertical-align: top;
+		width: columns(2);	
+		@include border-box;
+	}
+	
 }
 
