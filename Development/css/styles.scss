@@ -1,0 +1,491 @@
+/*
+*	Author: Luis Antonio Sánchez
+*	Version: 1.0
+*	Date: 04/21/2014
+*	Project: MentorcliQ
+*/
+
+// Base colors definition
+
+$color-deep-purple: #382f5b;
+$color-fuchsia: #b1489e;
+$color-light-gray: #dadada;
+
+
+// Grid variables
+$max-width:       1000px;                 // set page max-width
+$column-width:    15%;                    // set column width
+$gutter-width:    2%;                     // set gutter width
+$maximum-columns: 6;                      // set max number of columns
+
+//Fonts imports
+@font-face{
+	font-family: 'Roboto';	
+	src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');	
+}
+
+@font-face{
+	font-family: 'Roboto';	
+	src: url('../assets/fonts/Roboto-Black.ttf') format('truetype');
+	font-weight: bold;
+}
+
+@font-face{
+	font-family: 'Roboto';	
+	src: url('../assets/fonts/Roboto-BlackItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Roboto';	
+	src: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight: bolder;
+}
+
+@font-face{
+	font-family: 'Roboto';	
+	src: url('../assets/fonts/Roboto-BoldItalic.ttf') format('truetype');
+	font-weight: bolder;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Roboto';	
+	src: url('../assets/fonts/Roboto-Italic.ttf') format('truetype');	
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Roboto';	
+	src: url('../assets/fonts/Roboto-Light.ttf') format('truetype');	
+	font-weight: lighter;
+}
+
+@font-face{
+	font-family: 'Roboto';	
+	src: url('../assets/fonts/Roboto-LightItalic.ttf') format('truetype');	
+	font-weight: lighter;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Roboto';	
+	src: url('../assets/fonts/Roboto-Medium.ttf') format('truetype');	
+	font-weight: 500;	
+}
+
+@font-face{
+	font-family: 'Roboto';	
+	src: url('../assets/fonts/Roboto-MediumItalic.ttf') format('truetype');	
+	font-weight: 500;	
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Roboto';	
+	src: url('../assets/fonts/Roboto-Thin.ttf') format('truetype');	
+	font-weight: 300;		
+}
+
+@font-face{
+	font-family: 'Roboto';	
+	src: url('../assets/fonts/Roboto-ThinItalic.ttf') format('truetype');	
+	font-weight: 300;	
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'RobotoSlab';
+	src: url('../assets/fonts/RobotoSlab-Regular.ttf') format('truetype');	
+}
+
+@font-face{
+	font-family: 'RobotoSlab';
+	src: url('../assets/fonts/RobotoSlab-Bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+@font-face{
+	font-family: 'RobotoSlab';
+	src: url('../assets/fonts/RobotoSlab-Light.ttf') format('truetype');
+	font-weight: lighter;
+}
+
+@font-face{
+	font-family: 'RobotoSlab';
+	src: url('../assets/fonts/RobotoSlab-Thin.ttf') format('truetype');
+	font-weight: 300;
+}
+
+// flexible grid functions modified from Bourbon by thoughtbot, inc ============================== /
+// http://thoughtbot.com/bourbon/#flex-grid ====================================================== /
+
+@function columns($columns, $container-columns: $maximum-columns) {
+  $width: $columns * $column-width + ($columns - 1) * $gutter-width;
+  $container-width: $container-columns * $column-width + ($container-columns - 1) * $gutter-width;
+  @return percentage($width / $container-width);
+}
+
+@function gutter($container-columns: $maximum-columns, $gutter: $gutter-width) {
+  $container-width: $container-columns * $column-width + ($container-columns - 1) * $gutter-width;
+  @return percentage($gutter / $container-width);
+}
+
+// row mixin includes clearfix hack, last-child margin fix and any global row styles ============= /
+@mixin row {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  @include clearfix;
+  @include nesting;
+}
+
+// target nested elements with grid styles. use in global styles as well as row mixin ============ /
+@mixin nesting {
+  padding: 0; // remove padding from parent container so floated columns can fill it
+
+  & > div { // target only child elements of the container. add elements other than div as needed
+    float: left;
+    margin-right: gutter();
+    @include border-box;
+  }
+}
+
+// calculate offset amounts for offset columns =================================================== /
+@function offset-columns($columns) {
+  $margin: $columns * $column-width + $columns * $gutter-width;
+  @return $margin;
+}
+
+@mixin offset($from-direction, $columns) {
+  @if $from-direction == left {
+    float: left;
+    margin-left: offset-columns($columns);
+  }
+  @if $from-direction == right {
+    float: right;
+    margin-right: offset-columns($columns);
+  }
+}
+
+// remove margin-right from last element in a row or container so all columns fit ================ /
+@mixin last {
+  margin-right: 0;
+  float: right; // fixes poor alignment with right edge caused by percentage calculations
+}
+
+// Mixins ======================================================================================== /
+
+@mixin clearfix { // micro clearfix hack
+  zoom: 1;
+  &:before, &:after { content: ""; display: table; }
+  &:after { clear: both; }
+}
+
+@mixin border-box { // border-box mixin
+  box-sizing: border-box;  
+}
+
+@mixin nesting{
+	padding: 0;
+
+	& > div{
+		float: left;
+		margin-right: gutter;
+		@include border-box;
+	}
+}
+
+@mixin row{
+	margin: 0px auto;
+	max-width: $max-width;
+	width: 100%;
+	@include clearfix;
+	@include nesting;
+}
+
+@mixin last{
+	margin-right: 0px;
+	float: right;
+}
+
+a.button{	
+	border-radius: 10px;	
+	display: inline-block;
+	font-family: "Roboto";
+	font-size: 12pt;
+	font-weight: 500;
+	padding: 3px 15px;
+	margin: 0.65em 0em;
+	text-decoration: none;
+}
+
+a.button:hover{
+	opacity: 0.75;
+}
+
+body{	
+	margin: 0px;
+	padding: 0px;	
+}
+
+footer{
+
+	padding: 10px 0px !important;
+
+	img{
+		width: 170px;
+	}
+}
+
+h1{	
+	font-family: "RobotoSlab";
+	font-size: 39px;	
+	font-weight: bold;
+}
+
+h1#logo{
+	
+	margin: 0px;
+
+	img{		
+		width: 100%;
+	}
+}
+
+h2{	
+	font-family: "RobotoSlab";
+	font-size: 24px;	
+	font-weight: bold;
+}
+
+h3{
+	font-family: "Roboto";
+	font-size: 18px;
+	font-weight: 500;
+}
+
+header{	
+	border-bottom: solid $color-deep-purple 10px;
+	width: columns(6);
+}
+
+header #global-navigation{
+
+	ul{
+		display: none;
+		list-style: none;		
+
+		li{
+			display: inline-block;
+			width: 30%;
+		}
+	}
+}
+
+header #logo{
+	img{
+		max-width: 210px;
+		width: 100%;
+	}
+}
+
+p{
+	font-family: "Roboto";
+	font-size: 14pt;
+	font-weight: 500;
+}
+
+section{
+	margin: 1em 0;
+}
+
+#social-media{	
+
+	h1{
+		margin: 0px;
+	}
+
+	h3{
+		margin: 0px;	
+	}
+
+	.icons{
+
+		margin-top: 0px;
+		padding: 10px;
+
+		a{
+			display: inline-block;
+			height: 40px;
+			margin: 0px 15px;
+			width: 40px;
+		}
+
+		a.li{
+			background: transparent url(../assets/images/img-icon-li.png) no-repeat;
+			background-size: 40px 40px;
+		}	
+
+		a.fb{
+			background: transparent url(../assets/images/img-icon-fb.png) no-repeat;
+			background-size: 40px 40px;
+		}
+
+		a.tw{
+			background: transparent url(../assets/images/img-icon-tw.png) no-repeat;
+			background-size: 40px 40px;
+		}	
+
+		a.li:hover{
+			background: transparent url(../assets/images/img-icon-hover-li.png) no-repeat;
+			background-size: 40px 40px;
+		}	
+
+		a.fb:hover{
+			background: transparent url(../assets/images/img-icon-hover-fb.png) no-repeat;
+			background-size: 40px 40px;
+		}
+
+		a.tw:hover{
+			background: transparent url(../assets/images/img-icon-hover-tw.png) no-repeat;
+			background-size: 40px 40px;
+		}	
+	}
+}
+
+.box{
+	display: inline-block;
+	height: 245px;
+	max-height: 245px;	
+	max-width: 300px;
+	margin-bottom: 20px;
+	padding: 1em;
+	vertical-align: top;
+	width: 100%;	
+	@include border-box;
+}
+
+.box-purple{
+	background-color: $color-deep-purple;
+}
+
+.box-gray{
+	background-color: $color-light-gray;
+}
+
+.container{
+	margin: 0px auto;
+	max-width: 320px;
+	padding: 0px 10px;
+	width: columns(6);
+	@include border-box;
+}
+
+.clear{
+	clear: both;
+}
+
+.feature{
+
+	display: inline-block;	
+	width: 100%;	
+
+	h2{
+		margin: 0px 0px 10px 0px;
+	}
+
+	div{
+		margin-bottom: 20px;
+	}
+
+	div > img{
+		display: inline-block;
+		margin: 0px 6px 0px 0px;
+		max-width: 80px;
+		width: 40%;
+		vertical-align: top;
+	}
+	div > p{
+		display: inline-block;
+		font-family: "Roboto";
+		font-size: 14px;
+		font-weight: 500;
+		margin: 0px;
+		vertical-align: top;
+		width: 50%;
+	}
+
+	h3{
+		font-family: "Roboto";
+		font-size: 22px;	
+		margin: 0px !important;	
+	}
+}
+
+.float-left{
+	float: left;	
+}
+
+.float-right{
+	float: right;	
+}
+
+.slider{	
+
+	width: columns(6);
+
+	img{
+		left: 0px;
+		max-width: 400px;				
+		top: 0px;
+	}
+}
+
+.sub-text{
+	color: black;
+	font-size: 12pt;
+}
+
+.text-align-center{
+	text-align: center;
+}
+
+.text-align-left{
+	text-align: left;
+}
+
+.text-align-justify{
+	text-align: justify;
+}
+
+.text-align-right{
+	text-align: right;
+}
+
+.text-black{
+	color: black;
+}
+
+.text-fuchsia{
+	color: $color-fuchsia;
+}
+
+.text-gray{
+	color: $color-light-gray;
+}
+
+.text-purple{
+	color: $color-deep-purple;
+}
+
+.text-white{
+	color: white;
+}
+
+// get grid styles in gear once viewport is large enough ========================================= /
+@media screen and (min-width: 20em) {
+
+}
+

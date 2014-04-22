@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/*
+*	Author: Luis Antonio Sánchez
+*	Version: 1.0
+*	Date: 04/21/2014
+*	Project: MentorcliQ
+*/
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-Black.ttf") format("truetype");
+  font-weight: bold; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-BlackItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bolder; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-BoldItalic.ttf") format("truetype");
+  font-weight: bolder;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-Italic.ttf") format("truetype");
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: lighter; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-LightItalic.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-Thin.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-ThinItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url("../assets/fonts/RobotoSlab-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url("../assets/fonts/RobotoSlab-Bold.ttf") format("truetype");
+  font-weight: bold; }
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url("../assets/fonts/RobotoSlab-Light.ttf") format("truetype");
+  font-weight: lighter; }
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url("../assets/fonts/RobotoSlab-Thin.ttf") format("truetype");
+  font-weight: 300; }
+
+a.button {
+  border-radius: 10px;
+  display: inline-block;
+  font-family: "Roboto";
+  font-size: 12pt;
+  font-weight: 500;
+  padding: 3px 15px;
+  margin: 0.65em 0em;
+  text-decoration: none; }
+
+a.button:hover {
+  opacity: 0.75; }
+
+body {
+  margin: 0px;
+  padding: 0px; }
+
+footer {
+  padding: 10px 0px !important; }
+  footer img {
+    width: 170px; }
+
+h1 {
+  font-family: "RobotoSlab";
+  font-size: 39px;
+  font-weight: bold; }
+
+h1#logo {
+  margin: 0px; }
+  h1#logo img {
+    width: 100%; }
+
+h2 {
+  font-family: "RobotoSlab";
+  font-size: 24px;
+  font-weight: bold; }
+
+h3 {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500; }
+
+header {
+  border-bottom: solid #382f5b 10px;
+  width: 100%; }
+
+header #global-navigation ul {
+  display: none;
+  list-style: none; }
+  header #global-navigation ul li {
+    display: inline-block;
+    width: 30%; }
+
+header #logo img {
+  max-width: 210px;
+  width: 100%; }
+
+p {
+  font-family: "Roboto";
+  font-size: 14pt;
+  font-weight: 500; }
+
+section {
+  margin: 1em 0; }
+
+#social-media h1 {
+  margin: 0px; }
+#social-media h3 {
+  margin: 0px; }
+#social-media .icons {
+  margin-top: 0px;
+  padding: 10px; }
+  #social-media .icons a {
+    display: inline-block;
+    height: 40px;
+    margin: 0px 15px;
+    width: 40px; }
+  #social-media .icons a.li {
+    background: transparent url(../assets/images/img-icon-li.png) no-repeat;
+    background-size: 40px 40px; }
+  #social-media .icons a.fb {
+    background: transparent url(../assets/images/img-icon-fb.png) no-repeat;
+    background-size: 40px 40px; }
+  #social-media .icons a.tw {
+    background: transparent url(../assets/images/img-icon-tw.png) no-repeat;
+    background-size: 40px 40px; }
+  #social-media .icons a.li:hover {
+    background: transparent url(../assets/images/img-icon-hover-li.png) no-repeat;
+    background-size: 40px 40px; }
+  #social-media .icons a.fb:hover {
+    background: transparent url(../assets/images/img-icon-hover-fb.png) no-repeat;
+    background-size: 40px 40px; }
+  #social-media .icons a.tw:hover {
+    background: transparent url(../assets/images/img-icon-hover-tw.png) no-repeat;
+    background-size: 40px 40px; }
+
+.box {
+  display: inline-block;
+  height: 245px;
+  max-height: 245px;
+  max-width: 300px;
+  margin-bottom: 20px;
+  padding: 1em;
+  vertical-align: top;
+  width: 100%;
+  box-sizing: border-box; }
+
+.box-purple {
+  background-color: #382f5b; }
+
+.box-gray {
+  background-color: #dadada; }
+
+.container {
+  margin: 0px auto;
+  max-width: 320px;
+  padding: 0px 10px;
+  width: 100%;
+  box-sizing: border-box; }
+
+.clear {
+  clear: both; }
+
+.feature {
+  display: inline-block;
+  width: 100%; }
+  .feature h2 {
+    margin: 0px 0px 10px 0px; }
+  .feature div {
+    margin-bottom: 20px; }
+  .feature div > img {
+    display: inline-block;
+    margin: 0px 6px 0px 0px;
+    max-width: 80px;
+    width: 40%;
+    vertical-align: top; }
+  .feature div > p {
+    display: inline-block;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px;
+    vertical-align: top;
+    width: 50%; }
+  .feature h3 {
+    font-family: "Roboto";
+    font-size: 22px;
+    margin: 0px !important; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.slider {
+  width: 100%; }
+  .slider img {
+    left: 0px;
+    max-width: 400px;
+    top: 0px; }
+
+.sub-text {
+  color: black;
+  font-size: 12pt; }
+
+.text-align-center {
+  text-align: center; }
+
+.text-align-left {
+  text-align: left; }
+
+.text-align-justify {
+  text-align: justify; }
+
+.text-align-right {
+  text-align: right; }
+
+.text-black {
+  color: black; }
+
+.text-fuchsia {
+  color: #b1489e; }
+
+.text-gray {
+  color: #dadada; }
+
+.text-purple {
+  color: #382f5b; }
+
+.text-white {
+  color: white; }
