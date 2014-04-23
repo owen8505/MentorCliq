@@ -140,6 +140,9 @@ p {
 section {
   margin: 1em 0; }
 
+#description {
+  margin-bottom: 1rem; }
+
 #features h1, #features h2, #features h3 {
   font-family: "RobotoSlab";
   margin-bottom: 1em; }
@@ -160,10 +163,33 @@ section {
   margin: 1rem 0rem; }
 
 #global-navigation ul {
+  color: #382f5b;
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 500;
   display: none;
-  list-style: none; }
+  list-style: none;
+  margin: 3rem 0px 0px;
+  padding: 0px;
+  text-align: center;
+  width: 100%; }
   #global-navigation ul li {
+    display: inline-block;
     width: 30%; }
+    #global-navigation ul li a {
+      color: #382f5b;
+      display: inline-block;
+      padding-bottom: 4px;
+      text-decoration: none; }
+    #global-navigation ul li a:hover {
+      border-bottom: 2px solid #382f5b; }
+
+#lifecycle a {
+  text-decoration: none; }
+#lifecycle h2 {
+  margin-bottom: 1rem; }
+#lifecycle p {
+  padding-left: 10px; }
 
 #logo {
   margin: 1em 0; }
@@ -177,9 +203,12 @@ section {
 #process:hover {
   opacity: 0.75; }
 
-#section_2 {
-  margin-bottom: 20px; }
-
+#social-media h1 {
+  margin-bottom: 1rem; }
+#social-media h3 {
+  margin-bottom: 1rem; }
+#social-media a.button {
+  margin-bottom: 1rem; }
 #social-media .icons {
   margin-top: 0px;
   padding: 10px; }
@@ -232,9 +261,9 @@ section {
   .slider .slider-header {
     height: 154px;
     position: absolute;
-    top: 0px;
-    left: 20px;
-    width: 90%; }
+    top: 10px;
+    left: 40px;
+    width: 80%; }
     .slider .slider-header h2 {
       border-bottom: 1px solid #382f5b;
       font-family: "RobotoSlab";
@@ -280,5 +309,52 @@ section {
   color: white; }
 
 @media only screen and (min-width: 40.063em) {
-  #global-navigation {
-    display: block; } }
+  #global-navigation ul {
+    display: block; }
+
+  .slider {
+    position: relative;
+    margin-bottom: 15px; }
+    .slider .slider-header {
+      position: absolute;
+      top: 120px;
+      left: 60px;
+      width: 400px; }
+      .slider .slider-header h2 {
+        border-bottom: 1px solid #382f5b;
+        font-family: "RobotoSlab";
+        font-size: 39px;
+        font-weight: normal;
+        margin: 2px 0px 10px; }
+      .slider .slider-header p {
+        font-family: "RobotoSlab";
+        font-size: 18px;
+        font-weight: normal;
+        border-left: none;
+        margin: 0px;
+        padding: 0px; } }
+@media only screen and (min-width: 64.063em) {
+  #global-navigation ul {
+    display: block; }
+
+  .slider {
+    position: relative;
+    margin-bottom: 15px; }
+    .slider .slider-header {
+      position: absolute;
+      top: 120px;
+      left: 60px;
+      width: 340px; }
+      .slider .slider-header h2 {
+        border-bottom: 1px solid #382f5b;
+        font-family: "RobotoSlab";
+        font-size: 39px;
+        font-weight: normal;
+        margin: 2px 0px 10px; }
+      .slider .slider-header p {
+        font-family: "RobotoSlab";
+        font-size: 18px;
+        font-weight: normal;
+        border-left: none;
+        margin: 0px;
+        padding: 0px; } }
