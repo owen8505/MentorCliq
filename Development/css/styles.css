@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 *	Author: Luis Antonio Sánchez
 *	Version: 1.0
@@ -90,7 +89,7 @@
   font-weight: 300; }
 
 a.button {
-  border-radius: 10px;
+  border-radius: 8px;
   display: inline-block;
   font-family: "Roboto";
   font-size: 12pt;
@@ -141,7 +140,17 @@ section {
   margin: 1em 0; }
 
 #description {
-  margin-bottom: 1rem; }
+  height: 250px;
+  max-height: 250px;
+  margin-bottom: 1.25em; }
+  #description p {
+    width: 82%; }
+  #description h3 {
+    width: 60%; }
+  #description a.button {
+    position: absolute;
+    bottom: 10%;
+    right: 10%; }
 
 #features h1, #features h2, #features h3 {
   font-family: "RobotoSlab";
@@ -183,13 +192,43 @@ section {
       text-decoration: none; }
     #global-navigation ul li a:hover {
       border-bottom: 2px solid #382f5b; }
+    #global-navigation ul li a.selected {
+      border-bottom: 2px solid #382f5b; }
 
-#lifecycle a {
-  text-decoration: none; }
-#lifecycle h2 {
-  margin-bottom: 1rem; }
-#lifecycle p {
-  padding-left: 10px; }
+#lifecycle {
+  height: 250px;
+  max-height: 250px; }
+  #lifecycle a {
+    text-decoration: none; }
+  #lifecycle h2 {
+    margin-bottom: 1rem; }
+  #lifecycle p {
+    padding-left: 10px; }
+
+#accomplish {
+  height: 250px;
+  max-height: 250px;
+  font-size: 0px; }
+  #accomplish .accomplish-container {
+    width: 100%; }
+    #accomplish .accomplish-container .accomplish-item-container {
+      display: inline-block;
+      vertical-align: top;
+      width: 25%;
+      text-align: right; }
+      #accomplish .accomplish-container .accomplish-item-container .accomplish-item {
+        width: 127px;
+        height: 127px;
+        background-color: #b5b5b5;
+        border-radius: 6px;
+        -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.75);
+        box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.75);
+        text-align: center;
+        color: #382f5b; }
+        #accomplish .accomplish-container .accomplish-item-container .accomplish-item img {
+          width: 80px;
+          margin-top: 10px; }
 
 #logo {
   margin: 1em 0; }
@@ -203,41 +242,44 @@ section {
 #process:hover {
   opacity: 0.75; }
 
-#social-media h1 {
-  margin-bottom: 1rem; }
-#social-media h3 {
-  margin-bottom: 1rem; }
-#social-media a.button {
-  margin-bottom: 1rem; }
-#social-media .icons {
-  margin-top: 0px;
-  padding: 10px; }
-  #social-media .icons a {
-    display: inline-block;
-    height: 40px;
-    margin: 0px 15px;
-    width: 40px; }
-  #social-media .icons a.li {
-    background: transparent url(../assets/images/img-icon-li.png) no-repeat;
-    background-size: 40px 40px; }
-  #social-media .icons a.fb {
-    background: transparent url(../assets/images/img-icon-fb.png) no-repeat;
-    background-size: 40px 40px; }
-  #social-media .icons a.tw {
-    background: transparent url(../assets/images/img-icon-tw.png) no-repeat;
-    background-size: 40px 40px; }
-  #social-media .icons a.li:hover {
-    background: transparent url(../assets/images/img-icon-hover-li.png) no-repeat;
-    background-size: 40px 40px; }
-  #social-media .icons a.fb:hover {
-    background: transparent url(../assets/images/img-icon-hover-fb.png) no-repeat;
-    background-size: 40px 40px; }
-  #social-media .icons a.tw:hover {
-    background: transparent url(../assets/images/img-icon-hover-tw.png) no-repeat;
-    background-size: 40px 40px; }
+#social-media {
+  height: 250px;
+  max-height: 250px; }
+  #social-media h1 {
+    margin-bottom: 1rem; }
+  #social-media h3 {
+    margin-bottom: 1rem; }
+  #social-media a.button {
+    margin-bottom: 1rem; }
+  #social-media .icons {
+    margin-top: 0px;
+    padding: 10px; }
+    #social-media .icons a {
+      display: inline-block;
+      height: 40px;
+      margin: 0px 15px;
+      width: 40px; }
+    #social-media .icons a.li {
+      background: transparent url(../assets/images/img-icon-li.png) no-repeat;
+      background-size: 40px 40px; }
+    #social-media .icons a.fb {
+      background: transparent url(../assets/images/img-icon-fb.png) no-repeat;
+      background-size: 40px 40px; }
+    #social-media .icons a.tw {
+      background: transparent url(../assets/images/img-icon-tw.png) no-repeat;
+      background-size: 40px 40px; }
+    #social-media .icons a.li:hover {
+      background: transparent url(../assets/images/img-icon-hover-li.png) no-repeat;
+      background-size: 40px 40px; }
+    #social-media .icons a.fb:hover {
+      background: transparent url(../assets/images/img-icon-hover-fb.png) no-repeat;
+      background-size: 40px 40px; }
+    #social-media .icons a.tw:hover {
+      background: transparent url(../assets/images/img-icon-hover-tw.png) no-repeat;
+      background-size: 40px 40px; }
 
 .box {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   padding: 1em; }
   .box h1, .box h2, .box h3, .box p {
     margin: 0px;
@@ -257,11 +299,11 @@ section {
 
 .slider {
   position: relative;
-  margin-bottom: 15px; }
+  margin-bottom: 1.25em; }
   .slider .slider-header {
     height: 154px;
     position: absolute;
-    top: 10px;
+    bottom: 10px;
     left: 40px;
     width: 80%; }
     .slider .slider-header h2 {
@@ -317,18 +359,18 @@ section {
     margin-bottom: 15px; }
     .slider .slider-header {
       position: absolute;
-      top: 120px;
+      bottom: 30px;
       left: 60px;
       width: 400px; }
       .slider .slider-header h2 {
         border-bottom: 1px solid #382f5b;
         font-family: "RobotoSlab";
-        font-size: 39px;
+        font-size: 2.4375em;
         font-weight: normal;
         margin: 2px 0px 10px; }
       .slider .slider-header p {
         font-family: "RobotoSlab";
-        font-size: 18px;
+        font-size: 1.125em;
         font-weight: normal;
         border-left: none;
         margin: 0px;
@@ -339,21 +381,21 @@ section {
 
   .slider {
     position: relative;
-    margin-bottom: 15px; }
+    margin-bottom: 1.25em; }
     .slider .slider-header {
       position: absolute;
-      top: 120px;
+      bottom: 30px;
       left: 60px;
       width: 340px; }
       .slider .slider-header h2 {
         border-bottom: 1px solid #382f5b;
         font-family: "RobotoSlab";
-        font-size: 39px;
+        font-size: 2.4375em;
         font-weight: normal;
         margin: 2px 0px 10px; }
       .slider .slider-header p {
         font-family: "RobotoSlab";
-        font-size: 18px;
+        font-size: 1.125em;
         font-weight: normal;
         border-left: none;
         margin: 0px;

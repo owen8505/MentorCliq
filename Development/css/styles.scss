@@ -10,6 +10,7 @@
 $color-deep-purple: #382f5b;
 $color-fuchsia: #b1489e;
 $color-light-gray: #dadada;
+$color-medium-gray: #b5b5b5;
 
 
 // Grid variables
@@ -121,7 +122,7 @@ $maximum-columns: 6;                      // set max number of columns
 }
 
 a.button{	
-	border-radius: 10px;	
+	border-radius: 8px;	
 	display: inline-block;
 	font-family: "Roboto";
 	font-size: 12pt;
@@ -186,7 +187,23 @@ section{
 }
 
 #description{
-	margin-bottom: 1rem;
+	height: 250px;
+	max-height: 250px;
+	margin-bottom: 1.25em;
+	
+	p {
+		width: 82%;
+	}
+	
+	h3 {
+		width: 60%;
+	}
+	
+	a.button{
+		position: absolute;
+		bottom: 10%;
+		right: 10%;		
+	}	
 }
 
 #features{	
@@ -245,12 +262,19 @@ section{
 			a:hover{
 				border-bottom: 2px solid $color-deep-purple;
 			}
+
+			a.selected{
+				border-bottom: 2px solid $color-deep-purple;	
+			}
 		}
 
 	}
 }
 
 #lifecycle{
+	height: 250px;
+	max-height: 250px;
+	
 	a{
 		text-decoration: none;
 	}
@@ -262,6 +286,44 @@ section{
 	p{
 		padding-left: 10px;
 	}
+}
+
+#accomplish{
+	height: 250px;
+	max-height: 250px;
+	font-size: 0px;
+	
+	.accomplish-container{
+		width: 100%;
+		
+		.accomplish-item-container{
+			display: inline-block;
+			vertical-align: top;
+			width: 25%;
+			text-align: right;
+		
+			.accomplish-item{
+				width: 127px;
+				height: 127px;
+				
+				background-color: $color-medium-gray;
+				border-radius: 6px;
+				-webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.75);
+				-moz-box-shadow:    1px 1px 2px 0px rgba(50, 50, 50, 0.75);
+				box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.75);
+				
+				text-align: center;
+				color: $color-deep-purple;
+				
+				img{
+					width: 80px;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+	
+	
 }
 
 #logo{	
@@ -281,7 +343,9 @@ section{
 	opacity: 0.75;
 }
 
-#social-media{		
+#social-media{
+	height: 250px;
+	max-height: 250px;
 
 	h1{
 		margin-bottom: 1rem;
@@ -340,7 +404,7 @@ section{
 }
 
 .box{
-	margin-bottom: 1rem;
+	margin-bottom: 1.25rem;
 	padding: 1em;
 
 	h1, h2, h3, p{
@@ -367,12 +431,12 @@ section{
 
 .slider{	
 	position: relative;
-	margin-bottom: 15px;	
-
+	margin-bottom: 1.25em;
+	
 	.slider-header{
 		height: 154px;
 		position: absolute;
-		top: 10px;
+		bottom: 10px;
 		left: 40px;		
 		width: 80%;
 
@@ -448,21 +512,21 @@ section{
 
 		.slider-header{		
 			position: absolute;
-			top: 120px;
+			bottom: 30px;
 			left: 60px;		
 			width: 400px;
 
 			h2{
 				border-bottom: 1px solid $color-deep-purple;
 				font-family: "RobotoSlab";
-				font-size: 39px;
+				font-size: 2.4375em;
 				font-weight: normal;
 				margin: 2px 0px 10px;
 			}
 
 			p{
 				font-family: "RobotoSlab";
-				font-size: 18px;
+				font-size: 1.125em;
 				font-weight: normal;
 				border-left: none;
 				margin: 0px;
@@ -481,25 +545,25 @@ section{
 
 	.slider{	
 		position: relative;
-		margin-bottom: 15px;	
+		margin-bottom: 1.25em;	
 
 		.slider-header{		
 			position: absolute;
-			top: 120px;
+			bottom: 30px;
 			left: 60px;		
 			width: 340px;
 
 			h2{
 				border-bottom: 1px solid $color-deep-purple;
 				font-family: "RobotoSlab";
-				font-size: 39px;
+				font-size: 2.4375em;
 				font-weight: normal;
 				margin: 2px 0px 10px;
 			}
 
 			p{
 				font-family: "RobotoSlab";
-				font-size: 18px;
+				font-size: 1.125em;
 				font-weight: normal;
 				border-left: none;
 				margin: 0px;
