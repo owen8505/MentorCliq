@@ -183,6 +183,8 @@ section {
       text-decoration: none; }
     #global-navigation ul li a:hover {
       border-bottom: 2px solid #382f5b; }
+    #global-navigation ul li a.selected {
+      border-bottom: 2px solid #382f5b; }
 
 #lifecycle a {
   text-decoration: none; }

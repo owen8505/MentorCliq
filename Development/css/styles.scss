@@ -245,6 +245,10 @@ section{
 			a:hover{
 				border-bottom: 2px solid $color-deep-purple;
 			}
+
+			a.selected{
+				border-bottom: 2px solid $color-deep-purple;	
+			}
 		}
 
 	}
