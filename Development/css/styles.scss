@@ -14,6 +14,7 @@ $color-light-gray: #dadada;
 
 // Grid variables
 $max-width:       1000px;                 // set page max-width
+$bp-phone-width:  320px;                  // set phones breakpoint max-width
 $column-width:    15%;                    // set column width
 $gutter-width:    2%;                     // set gutter width
 $maximum-columns: 6;                      // set max number of columns
@@ -98,6 +99,7 @@ $maximum-columns: 6;                      // set max number of columns
 @font-face{
 	font-family: 'RobotoSlab';
 	src: url('../assets/fonts/RobotoSlab-Regular.ttf') format('truetype');	
+	font-weight: normal;
 }
 
 @font-face{
@@ -118,105 +120,13 @@ $maximum-columns: 6;                      // set max number of columns
 	font-weight: 300;
 }
 
-// flexible grid functions modified from Bourbon by thoughtbot, inc ============================== /
-// http://thoughtbot.com/bourbon/#flex-grid ====================================================== /
-
-@function columns($columns, $container-columns: $maximum-columns) {
-  $width: $columns * $column-width + ($columns - 1) * $gutter-width;
-  $container-width: $container-columns * $column-width + ($container-columns - 1) * $gutter-width;
-  @return percentage($width / $container-width);
-}
-
-@function gutter($container-columns: $maximum-columns, $gutter: $gutter-width) {
-  $container-width: $container-columns * $column-width + ($container-columns - 1) * $gutter-width;
-  @return percentage($gutter / $container-width);
-}
-
-// row mixin includes clearfix hack, last-child margin fix and any global row styles ============= /
-@mixin row {
-  width: 100%;
-  max-width: $max-width;
-  margin: 0 auto;
-  @include clearfix;
-  @include nesting;
-}
-
-// target nested elements with grid styles. use in global styles as well as row mixin ============ /
-@mixin nesting {
-  padding: 0; // remove padding from parent container so floated columns can fill it
-
-  & > div { // target only child elements of the container. add elements other than div as needed
-    float: left;
-    margin-right: gutter();
-    @include border-box;
-  }
-}
-
-// calculate offset amounts for offset columns =================================================== /
-@function offset-columns($columns) {
-  $margin: $columns * $column-width + $columns * $gutter-width;
-  @return $margin;
-}
-
-@mixin offset($from-direction, $columns) {
-  @if $from-direction == left {
-    float: left;
-    margin-left: offset-columns($columns);
-  }
-  @if $from-direction == right {
-    float: right;
-    margin-right: offset-columns($columns);
-  }
-}
-
-// remove margin-right from last element in a row or container so all columns fit ================ /
-@mixin last {
-  margin-right: 0;
-  float: right; // fixes poor alignment with right edge caused by percentage calculations
-}
-
-// Mixins ======================================================================================== /
-
-@mixin clearfix { // micro clearfix hack
-  zoom: 1;
-  &:before, &:after { content: ""; display: table; }
-  &:after { clear: both; }
-}
-
-@mixin border-box { // border-box mixin
-  box-sizing: border-box;  
-}
-
-@mixin nesting{
-	padding: 0;
-
-	& > div{
-		float: left;
-		margin-right: gutter;
-		@include border-box;
-	}
-}
-
-@mixin row{
-	margin: 0px auto;
-	max-width: $max-width;
-	width: 100%;
-	@include clearfix;
-	@include nesting;
-}
-
-@mixin last{
-	margin-right: 0px;
-	float: right;
-}
-
 a.button{	
 	border-radius: 10px;	
 	display: inline-block;
 	font-family: "Roboto";
 	font-size: 12pt;
 	font-weight: 500;
-	padding: 3px 15px;
+	padding: 3px 15px 5px;
 	margin: 0.65em 0em;
 	text-decoration: none;
 }
@@ -232,7 +142,8 @@ body{
 
 footer{
 
-	padding: 10px 0px !important;
+	margin-top: 1em;
+	padding: 1em 0em !important;
 
 	img{
 		width: 170px;
@@ -245,14 +156,6 @@ h1{
 	font-weight: bold;
 }
 
-h1#logo{
-	
-	margin: 0px;
-
-	img{		
-		width: 100%;
-	}
-}
 
 h2{	
 	font-family: "RobotoSlab";
@@ -267,48 +170,82 @@ h3{
 }
 
 header{	
-	border-bottom: solid $color-deep-purple 10px;
-	width: columns(6);
-}
-
-header #global-navigation{
-	ul{
-		display: none;
-		list-style: none;		
-
-		li{
-			display: inline-block;
-			width: 30%;
-		}
-	}
-}
-
-header #logo{
-	img{
-		max-width: 210px;
-		width: 100%;
-	}
+	border-bottom: solid $color-deep-purple 10px;		
 }
 
 p{
+	border-left: 2px solid $color-light-gray;
 	font-family: "Roboto";
-	font-size: 14pt;
+	font-size: 12px;
 	font-weight: 500;
+	padding-left: 10px;
 }
 
 section{
 	margin: 1em 0;
 }
 
-#social-media{	
+#features{	
 
-	h1{
-		margin: 0px;
+	h1, h2, h3{
+		font-family: "RobotoSlab";
+		margin-bottom: 1em;
+	}
+	
+	img{
+		display: inline-block;
+		margin: 0% 5%;
+		max-width: 90px;
+		vertical-align: top;
+		width: 40%;
 	}
 
-	h3{
-		margin: 0px;	
+	p{
+		font-family: "Roboto";
+		font-weight: 500;
+		display: inline-block;
+		margin-top: 10px;
+		vertical-align: top;
+		width: 50%;
 	}
+
+	 .feature-description{
+	 	margin: 1rem 0rem;
+	 }
+}
+
+#global-navigation{
+	ul{		
+		display: none;
+		list-style: none;		
+		li{			
+			width: 30%;
+		}
+	}
+}
+
+#logo{	
+	margin: 1em 0;	
+}
+
+#process{
+	img{
+		display: block;
+		margin: 20px auto 0px;
+		max-width: 250px;
+		width: 100%;
+	}
+}
+
+#process:hover{
+	opacity: 0.75;
+}
+
+#section_2{
+	margin-bottom: 20px;
+}
+
+#social-media{		
 
 	.icons{
 
@@ -355,15 +292,13 @@ section{
 }
 
 .box{
-	display: inline-block;
-	height: 245px;
-	max-height: 245px;	
-	max-width: 300px;
-	margin-bottom: 20px;
+	margin-bottom: 1rem;
 	padding: 1em;
-	vertical-align: top;
-	width: 100%;	
-	@include border-box;
+
+	h1, h2, h3, p{
+		margin: 0px;
+		padding: 0px;
+	}
 }
 
 .box-purple{
@@ -372,55 +307,6 @@ section{
 
 .box-gray{
 	background-color: $color-light-gray;
-}
-
-.container{
-	margin: 0px auto;
-	max-width: 320px;
-	padding: 0px 10px;
-	width: columns(6);
-	@include border-box;
-}
-
-.clear{
-	clear: both;
-}
-
-.feature{
-
-	display: inline-block;	
-	width: 100%;	
-
-	h2{
-		margin: 0px 0px 10px 0px;
-	}
-
-	div{
-		margin-bottom: 20px;
-	}
-
-	div > img{
-		display: inline-block;
-		margin: 0px 6px 0px 0px;
-		max-width: 80px;
-		width: 40%;
-		vertical-align: top;
-	}
-	div > p{
-		display: inline-block;
-		font-family: "Roboto";
-		font-size: 14px;
-		font-weight: 500;
-		margin: 0px;
-		vertical-align: top;
-		width: 50%;
-	}
-
-	h3{
-		font-family: "Roboto";
-		font-size: 22px;	
-		margin: 0px !important;	
-	}
 }
 
 .float-left{
@@ -432,13 +318,34 @@ section{
 }
 
 .slider{	
+	position: relative;
+	margin-bottom: 15px;	
 
-	width: columns(6);
+	img{				
+	}
 
-	img{
-		left: 0px;
-		max-width: 400px;				
+	.slider-header{
+		height: 154px;
+		position: absolute;
 		top: 0px;
+		left: 20px;		
+		width: 90%;
+
+		h2{
+			border-bottom: 1px solid $color-deep-purple;
+			font-family: "RobotoSlab";
+			font-size: 29px;
+			font-weight: normal;
+			margin: 2px 0px 10px;
+		}
+
+		p{
+			font-family: "RobotoSlab";
+			font-weight: normal;
+			border-left: none;
+			margin: 0px;
+			padding: 0px;
+		}
 	}
 }
 
@@ -483,94 +390,9 @@ section{
 	color: white;
 }
 
-// get grid styles in gear once viewport is large enough ========================================= /
-@media screen and (min-width: 320px) {
-
-	header{	
-		border-bottom: solid $color-deep-purple 10px;
-		width: 100%;
-		text-align: center;
-		
-		.container{
-			background: #333;
-		}
+@media only screen and (min-width: 40.063em) {
+	#global-navigation{
+		display: block;
 	}
-
-	header #logo{
-		width: columns(4);
-		display: inline-block;
-		text-align: left;
-		
-		img{
-			max-width: columns(3);
-			width: columns(3);
-		}
-	}
-	
-	header #global-navigation{
-		width: columns(2);
-		display: inline-block;
-		ul{
-			display: block;
-			list-style: none;
-			padding: 0px;
-			margin: 0px;
-
-			li{
-				display: inline-block;
-				width: 30%;
-				font-family: "Roboto";
-				font-size: 14px;
-				font-weight: 500;
-				
-				a{
-					color: $color-deep-purple;
-					text-decoration: none;
-				}
-			}
-		}
-	}
-	
-	.slider{
-		width: columns(6);
-
-		img{
-			left: 0px;
-			top: 0px;
-		}
-	}
-	
-	#features{
-		width: columns(6);
-		margin-top: 15px;
-		
-		.box{
-			margin-right: gutter(7);
-		}
-		
-		.box:last-child {
-			margin-right: 0;
-		}
-	}
-	
-	.container{
-		margin: 0px auto;
-		max-width: $max-width;
-		padding: 0px 10px;
-		width: columns(6);
-		@include border-box;
-	}
-	
-	.box{
-		display: inline-block;
-		height: 245px;
-		max-height: 245px;	
-		margin-bottom: 20px;
-		padding: 1em;
-		vertical-align: top;
-		width: columns(2);	
-		@include border-box;
-	}
-	
 }
 

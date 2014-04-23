@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MentorcliQ</title>    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/prefixfree.js"></script>
@@ -12,13 +15,11 @@
   <body>
     
   <header>
-    <div class="container">
-        <h1 id="logo">
-          <a href="/" title="Home">
-            <img src="assets/images/img-logo-mentorcliq.png" alt="MentorcliQ">
-          </a>
-        </h1>      
-      <nav id="global-navigation">
+    <div class="row">      
+        <a id="logo" href="/" title="Home" class="small-5 large-3 columns">
+          <img src="assets/images/img-logo-mentorcliq.png" alt="MentorcliQ">
+        </a>        
+      <nav id="global-navigation" class="small-1 large-2 large-offset-1 columns">
         <ul>
           <li><a href="#" title ="The Solution">The Solution</a></li>|
           <li><a href="#" title ="Our Clients">Our Clients</a></li>|
@@ -28,12 +29,122 @@
     </div>
   </header>
 
-  <section class="container">
-    <div class="slider">
+  <section id="slider" class="row">
+    <div class="slider small-6 large-6 columns">
       <img src="assets/images/img-mentoring-slider.jpg" alt="Simple. Powerful. Trackable ">
+      <div class="slider-header">
+        <h2 class="text-purple">Simple. Powerful. Trackable</h2>
+        <p class="text-purple">Software that manages your mentoring program like never before.</p>
+      </div>
     </div>
   </section>
-  
+
+  <section id="features" class="row">
+    <div class="small-6 large-2 columns">
+      <div class="box box-gray">
+        <h2 class="text-purple text-align-center">Communication</h2>
+        <div class="feature-description">
+          <img src="assets/images/img-icon-mail.png" alt="Communication">
+          <p class="text-align-left">Instead of learning a new software system,  your organization can  communicate with the tools it already uses.</p>
+        </div>
+        <h3 class="text-purple text-align-center">Activity Tracking System</h3>
+      </div>      
+    </div>
+    <div class="small-6 large-2 columns">
+      <div class="box box-gray">
+        <h2 class="text-purple text-align-center">Collaboration</h2>
+        <div class="feature-description">
+          <img src="assets/images/img-icon-visual-personality.png" alt="Collaboration">
+          <p class="text-align-left">Increase the connection between participants by using our unique VPS&#8482; to match participants in meaningful ways.</p>
+        </div>
+        <h3 class="text-purple text-align-center">Visual Personality Survey</h3>
+      </div>      
+    </div>
+    <div class="small-6 large-2 columns">
+      <div class="box box-gray">
+        <h2 class="text-purple text-align-center">Realization</h2>
+        <div class="feature-description">
+          <img src="assets/images/img-icon-dedicated-sucess.png" alt="Realization">
+          <p class="text-align-left">Instead of learning a new software system,  your organization can  communicate with the tools it already uses.</p>
+        </div>
+        <h3 class="text-purple text-align-center">Dedicated Sucess Coach</h3>
+      </div>      
+    </div>
+  </section>
+
+  <section id="section_2" class="row">
+    <div class="small-6 large-4 columns">
+      <h1 class="text-purple">Employee Engagement?</h1>
+      <h2 class="text-fuchsia">Highly engaged organizations grow profits 3X faster.</h2>
+      <p class="text_black">
+        Formal Mentoring has been proven to be one of the most effective ways to increase employee engagement. Highly engaged organizations have the potential to reduce staff turnover by 87% 
+        and improve performance by 20%.
+      </p>
+      <h3 class="text-black">
+        Our mission is to make mentoring work, by providing a simple and affordable solution.
+      </h3>
+      <a href="#" title="Learn More" class="button box-purple text-white float-right">Learn More</a>
+      <div class="clear"></div>
+    </div>
+    <div id="social-media" class="small-6 large-2 columns">
+      <div class="box box-purple text-align-center">
+        <h1 class="text-white">Get in touch</h1>
+        <h3 class="text-white">
+          Contact us for more information or to request a free demo.
+        </h3>
+        <a href="#" title="Learn More" class="button box-gray text-purple">Contact</a>
+        <div class="icons">
+          <a href="#" title="LinkedIn" class="li"></a>
+          <a href="#" title="Facebook" class="fb"></a>
+          <a href="#" title="Twitter" class="tw"></a>
+        </div>
+      </div>      
+    </div>
+  </section> 
+
+  <section id="section_3" class="row">
+    <div class="small-6 large-2 columns">
+      <div class="box box-purple text-align-left">
+        <a href="#" title="Learn about the 5 stages of the formal mentoring lifecycle.">
+          <div id="process" class="box box-purple text-align-left">
+            <h2 class="text-white">Learn about the 5 stages of the formal mentoring lifecycle.</h2>
+            <p class="text-white">
+              See how our process works, from consulting during the initial Concept stage to analyzing robust metrics through the final Maturity stage.
+            </p>
+            <img src="assets/images/img-process.png" alt="Five stages">
+          </div>
+        </a>
+      </div>      
+    </div>    
+  </section>
+
+  <footer class="box-purple">
+    <div class="row">
+      <img src="assets/images/img-white-logo-mentorcliq.png" title="MentorcliQ" class="small-3 large-1 columns">
+    </div>
+  </footer>
+
+    <!--div class="box-gray feature small-6 large-2 columns">
+      <h2 class="text-purple">Collaboration</h2>
+      <div>
+        <img src="assets/images/img-icon-visual-personality.png" alt="Collaboration">
+        <p class="text-align-left">Increase the connection between participants by using our unique VPS&#8482; to match participants in meaningful ways.</p>
+      </div>
+      <h3 class="text-purple">Visual Personality Survey</h3>
+    </div>
+
+    <div class="box-gray feature small-6 large-2 columns">
+      <h2 class="text-purple">Realization</h2>
+      <div>
+        <img src="assets/images/img-icon-dedicated-sucess.png" alt="Realization">
+        <p class="text-align-left">Instead of learning a new software system,  your organization can  communicate with the tools it already uses.</p>
+      </div>
+      <h3 class="text-purple">Dedicated Sucess Coach</h3>
+    </div>
+  </section>
+
+    
+
   <section id="features" class="container">
     <div class="box box-gray text-align-center feature">
       <h2 class="text-purple">Communication</h2>
@@ -63,7 +174,7 @@
     </div>
   </section>
 
-  <section class="container">
+  <section id="section_2" class="container">
     <div>
       <h1 class="text-purple">Employee Engagement?</h1>
       <h2 class="text-fuchsia">Highly engaged organizations grow profits 3X faster.</h2>
@@ -92,14 +203,21 @@
         <a href="#" title="Twitter" class="tw"></a>
       </div>
     </div>
-  </section>
+  </section>  
 
-  <footer class="box-purple">
-    <div class="container">
-      <img src="/assets/images/img-white-logo-mentorcliq.png" title="MentorcliQ">
-    </div>
-  </footer>
-    
+  <section class="container">
+    <a href="#" title="Learn about the 5 stages of the formal mentoring lifecycle.">
+      <div id="process" class="box box-purple text-align-left">
+        <h2 class="text-white">Learn about the 5 stages of the formal mentoring lifecycle.</h2>
+        <p class="text-white">
+          See how our process works, from consulting during the initial Concept stage to analyzing robust metrics through the final Maturity stage.
+        </p>
+        <img src="assets/images/img-process.png" alt="Five stages">
+      </div>
+    </a>
+  </section>
+  
+    -->
     <script src="js/vendor/jquery.js"></script>    
   </body>
 </html>
