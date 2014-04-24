@@ -228,9 +228,9 @@ section{
 		width: 50%;
 	}
 
-	 .feature-description{
+	.feature-description{
 	 	margin: 1rem 0rem;
-	 }
+	}
 }
 
 #global-navigation{
@@ -269,9 +269,7 @@ section{
 	}
 }
 
-#lifecycle{
-	min-height: 250px;
-	
+#lifecycle{	
 	a{
 		text-decoration: none;
 	}
@@ -355,6 +353,8 @@ section{
 }
 
 #process{
+	padding: 1em;
+
 	img{
 		display: block;
 		margin: 20px auto 0px;
@@ -557,6 +557,12 @@ section{
 		}
 	}
 	
+	#features{	
+		.box {
+			min-height: 250px;
+		}
+	}
+	
 	#description{
 		h3 {
 			display: inline-block;
@@ -572,6 +578,13 @@ section{
 		.accomplish-container{
 			.accomplish-item-container{
 				display: inline-block;
+				width: 150px;
+				
+				padding-right: 0em;
+				
+				.accomplish-how{
+					height: 120px;
+				}
 			}
 		}
 	}
@@ -613,6 +626,12 @@ section{
 		}
 	}
 	
+	#features{	
+		.box {
+			min-height: 200px;
+		}
+	}
+	
 	#description{
 		h3 {
 			display: inline-block;
@@ -636,6 +655,12 @@ section{
 					height: 120px;
 				}
 			}
+		}
+	}
+	
+	#section_3{
+		.box {
+			min-height: 250px;
 		}
 	}
 }

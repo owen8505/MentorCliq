@@ -193,14 +193,12 @@ section {
     #global-navigation ul li a.selected {
       border-bottom: 2px solid #382f5b; }
 
-#lifecycle {
-  min-height: 250px; }
-  #lifecycle a {
-    text-decoration: none; }
-  #lifecycle h2 {
-    margin-bottom: 1rem; }
-  #lifecycle p {
-    padding-left: 10px; }
+#lifecycle a {
+  text-decoration: none; }
+#lifecycle h2 {
+  margin-bottom: 1rem; }
+#lifecycle p {
+  padding-left: 10px; }
 
 #accomplish {
   padding-top: 1.5em; }
@@ -245,11 +243,13 @@ section {
 #logo {
   margin: 1em 0; }
 
-#process img {
-  display: block;
-  margin: 20px auto 0px;
-  max-width: 250px;
-  width: 100%; }
+#process {
+  padding: 1em; }
+  #process img {
+    display: block;
+    margin: 20px auto 0px;
+    max-width: 250px;
+    width: 100%; }
 
 #process:hover {
   opacity: 0.75; }
@@ -386,6 +386,9 @@ section {
         margin: 0px;
         padding: 0px; }
 
+  #features .box {
+    min-height: 250px; }
+
   #description h3 {
     display: inline-block;
     width: 60%; }
@@ -393,7 +396,11 @@ section {
     margin-top: 2em; }
 
   #accomplish .accomplish-container .accomplish-item-container {
-    display: inline-block; } }
+    display: inline-block;
+    width: 150px;
+    padding-right: 0em; }
+    #accomplish .accomplish-container .accomplish-item-container .accomplish-how {
+      height: 120px; } }
 @media only screen and (min-width: 64.063em) {
   #global-navigation ul {
     display: block; }
@@ -420,6 +427,9 @@ section {
         margin: 0px;
         padding: 0px; }
 
+  #features .box {
+    min-height: 200px; }
+
   #description h3 {
     display: inline-block;
     width: 60%; }
@@ -431,4 +441,7 @@ section {
     width: 150px;
     padding-right: 0em; }
     #accomplish .accomplish-container .accomplish-item-container .accomplish-how {
-      height: 120px; } }
+      height: 120px; }
+
+  #section_3 .box {
+    min-height: 250px; } }
