@@ -187,8 +187,7 @@ section{
 }
 
 #description{
-	height: 250px;
-	max-height: 250px;
+	min-height: 250px;
 	margin-bottom: 1.25em;
 	
 	p {
@@ -196,13 +195,12 @@ section{
 	}
 	
 	h3 {
-		width: 60%;
+		display: inline-block;
 	}
 	
 	a.button{
-		position: absolute;
-		bottom: 10%;
-		right: 10%;		
+		display: inline-block;
+		margin: 0px;	
 	}	
 }
 
@@ -272,8 +270,7 @@ section{
 }
 
 #lifecycle{
-	height: 250px;
-	max-height: 250px;
+	min-height: 250px;
 	
 	a{
 		text-decoration: none;
@@ -289,35 +286,62 @@ section{
 }
 
 #accomplish{
-	height: 250px;
-	max-height: 250px;
-	font-size: 0px;
+	padding-top: 1.5em;
+	
+	h1 {
+		padding-left: 10px;
+	}
 	
 	.accomplish-container{
-		width: 100%;
+		text-align: center;
+		
+		.accomplish-item-container:last-child {
+			text-align: left;
+		}
 		
 		.accomplish-item-container{
-			display: inline-block;
+			padding-top: 2em;
+			padding-left: 1em;
+			padding-right: 1em;
+			
 			vertical-align: top;
-			width: 25%;
-			text-align: right;
+			text-align: center;
 		
 			.accomplish-item{
-				width: 127px;
-				height: 127px;
+				display: inline-block;				
+				width: 120px;
+				height: 120px;
 				
 				background-color: $color-medium-gray;
+				color: $color-deep-purple;
+				text-align: center;
+				
 				border-radius: 6px;
 				-webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.75);
 				-moz-box-shadow:    1px 1px 2px 0px rgba(50, 50, 50, 0.75);
-				box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.75);
-				
-				text-align: center;
-				color: $color-deep-purple;
+				box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.75);				
 				
 				img{
-					width: 80px;
-					margin-top: 10px;
+					width: 60px;
+					margin-top: 17px;
+				}
+				
+				h2{
+					margin-top: 5px;
+				}
+			}
+			
+			.accomplish-how {
+				position: relative;
+				display: inline-block;
+				
+				width: 120px;
+				height: 80px;
+				
+				a{
+					position: absolute;
+					bottom: 0px;
+					margin: 0px;
 				}
 			}
 		}
@@ -344,8 +368,7 @@ section{
 }
 
 #social-media{
-	height: 250px;
-	max-height: 250px;
+	min-height: 250px;
 
 	h1{
 		margin-bottom: 1rem;
@@ -434,9 +457,8 @@ section{
 	margin-bottom: 1.25em;
 	
 	.slider-header{
-		height: 154px;
 		position: absolute;
-		bottom: 10px;
+		bottom: 5px;
 		left: 40px;		
 		width: 80%;
 
@@ -534,6 +556,25 @@ section{
 			}
 		}
 	}
+	
+	#description{
+		h3 {
+			display: inline-block;
+			width: 60%;
+		}
+		
+		a.button{
+			margin-top: 2em;
+		}
+	}
+	
+	#accomplish{
+		.accomplish-container{
+			.accomplish-item-container{
+				display: inline-block;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 64.063em) {
@@ -568,6 +609,32 @@ section{
 				border-left: none;
 				margin: 0px;
 				padding: 0px;
+			}
+		}
+	}
+	
+	#description{
+		h3 {
+			display: inline-block;
+			width: 60%;
+		}
+		
+		a.button{
+			margin-top: 2em;
+		}
+	}
+	
+	#accomplish{
+		.accomplish-container{
+			.accomplish-item-container{
+				display: inline-block;
+				width: 150px;
+				
+				padding-right: 0em;
+				
+				.accomplish-how{
+					height: 120px;
+				}
 			}
 		}
 	}
