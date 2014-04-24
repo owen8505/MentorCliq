@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 *	Author: Luis Antonio Sánchez
 *	Version: 1.0
@@ -363,6 +362,20 @@ section {
 
 .text-white {
   color: white; }
+
+#solution-how .solution-how-item {
+  min-height: 150px; }
+  #solution-how .solution-how-item .left {
+    display: inline-block;
+    text-align: center; }
+    #solution-how .solution-how-item .left img {
+      display: inline-block;
+      margin: 0% 5%;
+      max-width: 90px;
+      vertical-align: top;
+      width: 90px; }
+  #solution-how .solution-how-item .right {
+    display: inline-block; }
 
 @media only screen and (min-width: 40.063em) {
   #global-navigation ul {

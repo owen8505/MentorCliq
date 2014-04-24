@@ -269,12 +269,6 @@ section{
 	}
 }
 
-#how-features{
-	.how-features-item{
-		
-	}
-}
-
 #lifecycle{
 	height: 250px;
 	max-height: 250px;
@@ -529,6 +523,31 @@ section{
 
 .text-white{
 	color: white;
+}
+
+// The solution
+
+#solution-how{
+	.solution-how-item{
+		min-height: 150px;
+		
+		.left{
+			display: inline-block;
+			text-align: center;
+			
+			img{
+				display: inline-block;
+				margin: 0% 5%;
+				max-width: 90px;
+				vertical-align: top;
+				width: 90px;
+			}
+		}
+		
+		.right{
+			display: inline-block;
+		}
+	}
 }
 
 @media only screen and (min-width: 40.063em) {
