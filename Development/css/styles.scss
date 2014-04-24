@@ -269,7 +269,16 @@ section{
 	}
 }
 
-#lifecycle{	
+#how-features{
+	.how-features-item{
+		
+	}
+}
+
+#lifecycle{
+	height: 250px;
+	max-height: 250px;
+	
 	a{
 		text-decoration: none;
 	}
@@ -284,11 +293,12 @@ section{
 }
 
 #accomplish{
+
 	padding-top: 1.5em;
 	
 	h1 {
 		padding-left: 10px;
-	}
+	}	
 	
 	.accomplish-container{
 		text-align: center;
