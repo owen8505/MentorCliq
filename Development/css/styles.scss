@@ -550,7 +550,6 @@ section{
 }
 
 #solution-where{
-	
 	.solution-where-item{
 		h2{
 			font-size: 22px;
@@ -568,10 +567,6 @@ section{
 			vertical-align: top;
 			width: 10%;
 		}
-	}
-	
-	.box{
-		min-height: 130px;
 	}
 }
 
@@ -620,6 +615,24 @@ section{
 			font-size: 18px;
 			font-weight: 500;
 		}
+		.paragraph {
+			border-left: 2px solid white;
+			padding-left: 10px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		
+			.paragraph-header{
+				font-family: "RobotoSlab";
+				font-size: 24px;	
+				font-weight: bold;
+				margin-bottom: 0.3em;
+			}
+			.paragraph-body{
+				font-family: "Roboto";
+				font-size: 14px;
+				font-weight: 500;
+			}
+		}
 	}
 	
 	#solution-how-statistics-2{
@@ -628,6 +641,10 @@ section{
 			height: 2px;
 			margin-top: 1em;
 			margin-bottom: 1em;
+		}
+		p{
+			font-size: 11px;
+			margin-top: 1.5em;
 		}
 	}
 	
@@ -661,12 +678,34 @@ section{
 	}
 }
 
-.solution-demo{
-	h2{
+#solution-demo{
+	
+	#solution-demo-container{
 		display: inline-block;
+		float: left;
+		width: 80%;
+		
+		h2{
+			display: inline-block;
+		}
+	
+		a{
+			display: inline-block;
+			margin-left: 1em;
+			padding: 0.4em;
+			padding-left: 1.6em;
+			padding-right: 1.6em;
+		}
 	}
-	a{
+
+	.separator{
 		display: inline-block;
+		float: left;
+		width: 10%;
+		background-color: $color-light-gray;
+		border: 0px;
+		height: 4px;
+		margin-top: 32px;
 	}
 }
 
@@ -753,12 +792,6 @@ section{
 	
 	// The solution
 	
-	#solution-where{
-		.box{
-			min-height: 120px;
-		}
-	}
-	
 	#solution-how{
 		#solution-how-statistics, #solution-how-statistics-2{
 			.box{
@@ -844,12 +877,6 @@ section{
 	}
 	
 	// The solution
-	
-	#solution-where{
-		.box{
-			min-height: 120px;
-		}
-	}
 	
 	#solution-how{
 		#solution-how-statistics, #solution-how-statistics-2{

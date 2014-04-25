@@ -387,8 +387,6 @@ section {
   margin-right: 0.6rem;
   vertical-align: top;
   width: 10%; }
-#solution-where .box {
-  min-height: 130px; }
 
 #solution-how .solution-how-item .left {
   display: inline-block;
@@ -417,11 +415,28 @@ section {
   font-family: "RobotoSlab";
   font-size: 18px;
   font-weight: 500; }
+#solution-how #solution-how-statistics .paragraph {
+  border-left: 2px solid white;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  #solution-how #solution-how-statistics .paragraph .paragraph-header {
+    font-family: "RobotoSlab";
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0.3em; }
+  #solution-how #solution-how-statistics .paragraph .paragraph-body {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500; }
 #solution-how #solution-how-statistics-2 .separator {
   background-color: #382f5b;
   height: 2px;
   margin-top: 1em;
   margin-bottom: 1em; }
+#solution-how #solution-how-statistics-2 p {
+  font-size: 11px;
+  margin-top: 1.5em; }
 #solution-how .box {
   min-height: 150px; }
 
@@ -434,10 +449,26 @@ section {
 #solution-roi .solution-roi-exmples p {
   border-left: none; }
 
-.solution-demo h2 {
-  display: inline-block; }
-.solution-demo a {
-  display: inline-block; }
+#solution-demo #solution-demo-container {
+  display: inline-block;
+  float: left;
+  width: 80%; }
+  #solution-demo #solution-demo-container h2 {
+    display: inline-block; }
+  #solution-demo #solution-demo-container a {
+    display: inline-block;
+    margin-left: 1em;
+    padding: 0.4em;
+    padding-left: 1.6em;
+    padding-right: 1.6em; }
+#solution-demo .separator {
+  display: inline-block;
+  float: left;
+  width: 10%;
+  background-color: #dadada;
+  border: 0px;
+  height: 4px;
+  margin-top: 32px; }
 
 #contact-headquarter #contact-headquarter-info h3 {
   margin-bottom: 1em; }
@@ -486,9 +517,6 @@ section {
     #accomplish .accomplish-container .accomplish-item-container .accomplish-how {
       height: 120px; }
 
-  #solution-where .box {
-    min-height: 120px; }
-
   #solution-how #solution-how-statistics .box, #solution-how #solution-how-statistics-2 .box {
     min-height: 290px; } }
 @media only screen and (min-width: 64.063em) {
@@ -535,9 +563,6 @@ section {
 
   #section_3 .box {
     min-height: 250px; }
-
-  #solution-where .box {
-    min-height: 120px; }
 
   #solution-how #solution-how-statistics .box, #solution-how #solution-how-statistics-2 .box {
     min-height: 200px; } }

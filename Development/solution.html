@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/foundation.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="js/vendor/modernizr.js"></script>
-    <script src="js/prefixfree.min.js"></script>
+    <script src="js/lib/prefixfree.min.js"></script>
   </head>
   <body>
     
@@ -161,7 +161,10 @@
     	<div class="box box-purple text-align-left text-white">
     		<h3>You want to make a positive impact on your employees and the future health and success of your firm.</h3>
     		<h2>Are you doing it?</h2>
-    		<p><h2>35% of employees</h2>who do not receive mentoring look for another job within 12 months. -ASTD</p>
+    		<div class="paragraph">
+    			<div class="paragraph-header">35% of Employees</div>
+    			<div class="paragraph-body">who do not receive mentoring look for another job within 12 months. -ASTD</div>
+    		</div>
     	</div>
     </div>
     <div id="solution-how-statistics-2" class="small-6 medium-3 large-2 columns">
@@ -225,10 +228,14 @@
   </section>
   
   <section id="solution-demo" class="row">
-    <div class="small-6 medium-6 large-6 columns">
-    	<h2 class="text-fuchsia text-align-center">Contact us for more information or to request a demo.</h2>
-      	<a href="#" title="Contact" class="button box-purple text-white">Contact</a>
-    </div>
+	<div class="small-6 medium-6 large-6 columns text-align-left">
+  		<hr class="separator"></hr>
+    	<div id="solution-demo-container" class="text-align-center">
+    		<h2 class="text-fuchsia text-align-center">Contact us for more information or to request a demo.</h2>
+	      	<a href="#" title="Contact" class="button box-purple text-white">Contact</a>
+    	</div>
+	    <hr class="separator"></hr>
+  	</div>
   </section>
 
   <footer class="box-purple">
@@ -240,3 +247,23 @@
     <script src="js/vendor/jquery.js"></script>    
   </body>
 </html>
+
+<script>
+	function adjustBoxSize() {
+		var maxHeight = 0;
+   		$('.solution-where-item').each(function() {
+   			var elementHeight = parseInt($(this).height());
+   			if( elementHeight > maxHeight){
+   				maxHeight = elementHeight;
+   			}
+   		});
+   		
+   		$('.solution-where-item').height(maxHeight);
+	}
+	$(document).ready(function() {
+		adjustBoxSize();
+	});
+	$(window).resize(function() {
+		adjustBoxSize();
+	});
+</script>
