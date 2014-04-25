@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 *	Author: Luis Antonio Sánchez
 *	Version: 1.0
@@ -139,6 +138,27 @@ p {
 
 section {
   margin: 1em 0; }
+
+.slider {
+  position: relative;
+  margin-bottom: 1.25em; }
+  .slider .slider-header {
+    position: absolute;
+    bottom: 5px;
+    left: 40px;
+    width: 80%; }
+    .slider .slider-header h2 {
+      border-bottom: 1px solid #382f5b;
+      font-family: "RobotoSlab";
+      font-size: 29px;
+      font-weight: normal;
+      margin: 2px 0px 10px; }
+    .slider .slider-header p {
+      font-family: "RobotoSlab";
+      font-weight: normal;
+      border-left: none;
+      margin: 0px;
+      padding: 0px; }
 
 #description {
   min-height: 250px;
@@ -293,62 +313,6 @@ section {
       background: transparent url(../assets/images/img-icon-hover-tw.png) no-repeat;
       background-size: 40px 40px; }
 
-#solution-header {
-  margin-bottom: 2rem; }
-  #solution-header div {
-    position: relative; }
-    #solution-header div h3 {
-      bottom: 18%;
-      left: 1.5em;
-      position: absolute; }
-
-#solution-how .solution-how-item {
-  min-height: 150px; }
-  #solution-how .solution-how-item .left {
-    display: inline-block;
-    text-align: center;
-    vertical-align: top;
-    width: 20%; }
-    #solution-how .solution-how-item .left img {
-      display: inline-block;
-      margin: 0 1em;
-      max-width: 90px;
-      vertical-align: top;
-      width: 70px; }
-  #solution-how .solution-how-item .right {
-    display: inline-block;
-    vertical-align: top;
-    width: 75%; }
-    #solution-how .solution-how-item .right h2 {
-      margin-bottom: 0.6em; }
-    #solution-how .solution-how-item .right h3 {
-      margin-bottom: 0.6em; }
-    #solution-how .solution-how-item .right p {
-      border-left: none; }
-#solution-how #solution-how-statistics h1, #solution-how #solution-how-statistics h2, #solution-how #solution-how-statistics h3 {
-  margin-bottom: 1rem; }
-
-#solution-roi .box {
-  padding-left: 0px; }
-#solution-roi .solution-roi-header h3 {
-  margin-bottom: 1.5em; }
-#solution-roi .solution-roi-improvements h1, #solution-roi .solution-roi-improvements h2 {
-  margin-bottom: 0.4em; }
-#solution-roi .solution-roi-exmples p {
-  border-left: none; }
-
-#solution-where .solution-where-item h2 {
-  font-size: 22px;
-  margin-bottom: 1rem; }
-#solution-where .solution-where-item div {
-  display: inline-block;
-  width: 85%; }
-#solution-where .solution-where-item img {
-  display: inline-block;
-  margin-right: 0.6rem;
-  vertical-align: top;
-  width: 10%; }
-
 .box {
   margin-bottom: 1.25rem;
   padding: 1em; }
@@ -370,27 +334,6 @@ section {
 
 .float-right {
   float: right; }
-
-.slider {
-  position: relative;
-  margin-bottom: 1.25em; }
-  .slider .slider-header {
-    position: absolute;
-    bottom: 5px;
-    left: 40px;
-    width: 80%; }
-    .slider .slider-header h2 {
-      border-bottom: 1px solid #382f5b;
-      font-family: "RobotoSlab";
-      font-size: 29px;
-      font-weight: normal;
-      margin: 2px 0px 10px; }
-    .slider .slider-header p {
-      font-family: "RobotoSlab";
-      font-weight: normal;
-      border-left: none;
-      margin: 0px;
-      padding: 0px; }
 
 .sub-text {
   color: black;
@@ -422,6 +365,78 @@ section {
 
 .text-white {
   color: white; }
+
+#solution-header {
+  margin-bottom: 2rem; }
+  #solution-header div {
+    position: relative; }
+    #solution-header div h3 {
+      bottom: 18%;
+      left: 1.5em;
+      position: absolute; }
+
+#solution-where .solution-where-item h2 {
+  font-size: 22px;
+  margin-bottom: 1rem; }
+#solution-where .solution-where-item div {
+  display: inline-block;
+  width: 85%; }
+#solution-where .solution-where-item img {
+  display: inline-block;
+  margin-right: 0.6rem;
+  vertical-align: top;
+  width: 10%; }
+#solution-where .box {
+  min-height: 130px; }
+
+#solution-how .solution-how-item .left {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 20%; }
+  #solution-how .solution-how-item .left img {
+    display: inline-block;
+    margin: 0 1em;
+    max-width: 90px;
+    vertical-align: top;
+    width: 70px; }
+#solution-how .solution-how-item .right {
+  display: inline-block;
+  vertical-align: top;
+  width: 75%; }
+  #solution-how .solution-how-item .right h2 {
+    margin-bottom: 0.6em; }
+  #solution-how .solution-how-item .right h3 {
+    margin-bottom: 0.6em; }
+  #solution-how .solution-how-item .right p {
+    border-left: none; }
+#solution-how #solution-how-statistics h1, #solution-how #solution-how-statistics h2, #solution-how #solution-how-statistics h3 {
+  margin-bottom: 1rem; }
+#solution-how #solution-how-statistics h3 {
+  font-family: "RobotoSlab";
+  font-size: 18px;
+  font-weight: 500; }
+#solution-how #solution-how-statistics-2 .separator {
+  background-color: #382f5b;
+  height: 2px;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+#solution-how .box {
+  min-height: 150px; }
+
+#solution-roi .box {
+  padding-left: 0px; }
+#solution-roi .solution-roi-header h3 {
+  margin-bottom: 1.5em; }
+#solution-roi .solution-roi-improvements h1, #solution-roi .solution-roi-improvements h2 {
+  margin-bottom: 0.4em; }
+#solution-roi .solution-roi-exmples p {
+  border-left: none; }
+
+.solution-demo h2 {
+  display: inline-block; }
+.solution-demo a {
+  display: inline-block; }
 
 @media only screen and (min-width: 40.063em) {
   #global-navigation ul {
@@ -463,7 +478,13 @@ section {
     width: 150px;
     padding-right: 0em; }
     #accomplish .accomplish-container .accomplish-item-container .accomplish-how {
-      height: 120px; } }
+      height: 120px; }
+
+  #solution-where .box {
+    min-height: 120px; }
+
+  #solution-how #solution-how-statistics .box, #solution-how #solution-how-statistics-2 .box {
+    min-height: 290px; } }
 @media only screen and (min-width: 64.063em) {
   #global-navigation ul {
     display: block; }
@@ -507,4 +528,10 @@ section {
       height: 120px; }
 
   #section_3 .box {
-    min-height: 250px; } }
+    min-height: 250px; }
+
+  #solution-where .box {
+    min-height: 120px; }
+
+  #solution-how #solution-how-statistics .box, #solution-how #solution-how-statistics-2 .box {
+    min-height: 200px; } }
