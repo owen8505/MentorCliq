@@ -295,20 +295,59 @@ section {
 
 #solution-header {
   margin-bottom: 2rem; }
+  #solution-header div {
+    position: relative; }
+    #solution-header div h3 {
+      bottom: 18%;
+      left: 1.5em;
+      position: absolute; }
 
-#solution-where .solution-where-item {
-  min-height: 0px !important; }
-  #solution-where .solution-where-item h2 {
-    font-size: 22px;
-    margin-bottom: 1rem; }
-  #solution-where .solution-where-item div {
+#solution-how .solution-how-item {
+  min-height: 150px; }
+  #solution-how .solution-how-item .left {
     display: inline-block;
-    width: 85%; }
-  #solution-where .solution-where-item img {
-    display: inline-block;
-    margin-right: 0.6rem;
+    text-align: center;
     vertical-align: top;
-    width: 10%; }
+    width: 20%; }
+    #solution-how .solution-how-item .left img {
+      display: inline-block;
+      margin: 0 1em;
+      max-width: 90px;
+      vertical-align: top;
+      width: 70px; }
+  #solution-how .solution-how-item .right {
+    display: inline-block;
+    vertical-align: top;
+    width: 75%; }
+    #solution-how .solution-how-item .right h2 {
+      margin-bottom: 0.6em; }
+    #solution-how .solution-how-item .right h3 {
+      margin-bottom: 0.6em; }
+    #solution-how .solution-how-item .right p {
+      border-left: none; }
+#solution-how #solution-how-statistics h1, #solution-how #solution-how-statistics h2, #solution-how #solution-how-statistics h3 {
+  margin-bottom: 1rem; }
+
+#solution-roi .box {
+  padding-left: 0px; }
+#solution-roi .solution-roi-header h3 {
+  margin-bottom: 1.5em; }
+#solution-roi .solution-roi-improvements h1, #solution-roi .solution-roi-improvements h2 {
+  margin-bottom: 0.4em; }
+#solution-roi .solution-roi-exmples p {
+  border-left: none; }
+
+#solution-where .solution-where-item h2 {
+  font-size: 22px;
+  margin-bottom: 1rem; }
+#solution-where .solution-where-item div {
+  display: inline-block;
+  width: 85%; }
+#solution-where .solution-where-item img {
+  display: inline-block;
+  margin-right: 0.6rem;
+  vertical-align: top;
+  width: 10%; }
 
 .box {
   margin-bottom: 1.25rem;
@@ -383,26 +422,6 @@ section {
 
 .text-white {
   color: white; }
-
-#solution-where .solution-where-item {
-  min-height: 250px; }
-
-#solution-how .solution-how-item {
-  min-height: 150px; }
-  #solution-how .solution-how-item .left {
-    display: inline-block;
-    text-align: center; }
-    #solution-how .solution-how-item .left img {
-      display: inline-block;
-      margin: 0% 5%;
-      max-width: 90px;
-      vertical-align: top;
-      width: 90px; }
-  #solution-how .solution-how-item .right {
-    display: inline-block; }
-
-#solution-roi {
-  text-align: left; }
 
 @media only screen and (min-width: 40.063em) {
   #global-navigation ul {

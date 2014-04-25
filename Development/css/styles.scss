@@ -430,15 +430,101 @@ section{
 	}
 }
 
+// The solution
+
+#solution-demo{
+
+}
+
 #solution-header{
 	margin-bottom: 2rem;
+
+	div{
+		position: relative;
+
+		h3{
+			bottom: 18%;
+			left: 1.5em;
+			position: absolute;
+		}
+	}
 }
+
+#solution-how{
+	.solution-how-item{
+		min-height: 150px;	
+		
+		.left{
+			display: inline-block;
+			text-align: center;
+			vertical-align: top;
+			width: 20%;
+			
+			img{
+				display: inline-block;
+				margin: 0 1em;
+				max-width: 90px;
+				vertical-align: top;
+				width: 70px;
+			}
+		}
+		
+		.right{
+			display: inline-block;
+			vertical-align: top;
+			width: 75%;
+
+			h2{
+				margin-bottom: 0.6em;
+			}
+
+			h3{
+				margin-bottom: 0.6em;	
+			}
+
+			p{
+				border-left: none;
+			}
+		}
+	}
+
+	#solution-how-statistics{
+		h1,h2,h3{
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+#solution-roi{
+
+	.box{
+		padding-left: 0px;
+	}
+
+	.solution-roi-header{
+		h3{
+			margin-bottom: 1.5em;
+		}
+	}
+
+	.solution-roi-improvements{
+		h1, h2{
+			margin-bottom: 0.4em;
+		}
+	}
+
+	.solution-roi-exmples{
+		p{
+			border-left: none;
+		}
+	}
+}
+
 
 #solution-where{
 	
 	.solution-where-item{
-
-		min-height: 0px !important;
+		
 
 		h2{
 			font-size: 22px;
@@ -558,40 +644,6 @@ section{
 	color: white;
 }
 
-// The solution
-
-#solution-where{
-	.solution-where-item{
-		min-height: 250px;
-	}
-}
-
-#solution-how{
-	.solution-how-item{
-		min-height: 150px;
-		
-		.left{
-			display: inline-block;
-			text-align: center;
-			
-			img{
-				display: inline-block;
-				margin: 0% 5%;
-				max-width: 90px;
-				vertical-align: top;
-				width: 90px;
-			}
-		}
-		
-		.right{
-			display: inline-block;
-		}
-	}
-}
-
-#solution-roi{
-	text-align: left;
-}
 
 @media only screen and (min-width: 40.063em) {
 	#global-navigation{
