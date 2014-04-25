@@ -458,6 +458,33 @@ section{
 	}
 }
 
+#solution-header{
+	margin-bottom: 2rem;
+}
+
+#solution-where{
+	
+	.solution-where-item{
+
+		h2{
+			font-size: 22px;
+			margin-bottom: 1rem;
+		}
+
+		div{
+			display: inline-block;
+			width: 85%;
+		}
+
+		img{
+			display: inline-block;
+			margin-right: 0.6rem;			
+			vertical-align: top;
+			width: 10%;
+		}
+	}
+}
+
 .box{
 	margin-bottom: 1.25rem;
 	padding: 1em;

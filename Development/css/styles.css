@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 *	Author: Luis Antonio Sánchez
 *	Version: 1.0
@@ -312,6 +313,21 @@ section {
     #social-media .icons a.tw:hover {
       background: transparent url(../assets/images/img-icon-hover-tw.png) no-repeat;
       background-size: 40px 40px; }
+
+#solution-header {
+  margin-bottom: 2rem; }
+
+#solution-where .solution-where-item h2 {
+  font-size: 22px;
+  margin-bottom: 1rem; }
+#solution-where .solution-where-item div {
+  display: inline-block;
+  width: 85%; }
+#solution-where .solution-where-item img {
+  display: inline-block;
+  margin-right: 0.6rem;
+  vertical-align: top;
+  width: 10%; }
 
 .box {
   margin-bottom: 1.25rem;
