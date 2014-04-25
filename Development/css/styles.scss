@@ -527,6 +527,12 @@ section{
 
 // The solution
 
+#solution-where{
+	.solution-where-item{
+		min-height: 250px;
+	}
+}
+
 #solution-how{
 	.solution-how-item{
 		min-height: 150px;
@@ -548,6 +554,10 @@ section{
 			display: inline-block;
 		}
 	}
+}
+
+#solution-roi{
+	text-align: left;
 }
 
 @media only screen and (min-width: 40.063em) {

@@ -363,6 +363,9 @@ section {
 .text-white {
   color: white; }
 
+#solution-where .solution-where-item {
+  min-height: 250px; }
+
 #solution-how .solution-how-item {
   min-height: 150px; }
   #solution-how .solution-how-item .left {
@@ -376,6 +379,9 @@ section {
       width: 90px; }
   #solution-how .solution-how-item .right {
     display: inline-block; }
+
+#solution-roi {
+  text-align: left; }
 
 @media only screen and (min-width: 40.063em) {
   #global-navigation ul {
