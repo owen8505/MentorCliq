@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MentorcliQ | Our Clients</title>    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/lib/prefixfree.min.js"></script>
+  </head>
+  <body>
+    
+  <header>
+    <div class="row">      
+        <a id="logo" href="index.html" title="Home" class="small-5 medium-3 large-3 columns">
+          <img src="assets/images/img-logo-mentorcliq.png" alt="MentorcliQ">
+        </a>        
+      <nav id="global-navigation" class="small-1 medium-2 large-2 medium-offset-1 large-offset-1 columns">
+        <ul>
+          <li><a href="#" title ="The Solution" class="selected">The Solution</a></li>|
+          <li><a href="clients.html" title ="Our Clients">Our Clients</a></li>|
+          <li><a href="contact.html" title ="Contact Us">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="clients-header" class="row">
+    <div class="small-6 medium-6 large-6 columns">
+      <img id="clients-header-image" src="assets/images/img-clients-header.jpeg" alt="Our Clients" >
+      <h3>Our Clients</h3>
+    </div>
+  </section>
+
+  <section id="clients-description" class="row">
+    <div class="small-6 medium-6 large-3 columns">
+      <div class="box text-align-left">
+		<h1 class="text-purple">MentorcliQ is passionate about helping our clients succeed.</h2>     
+      </div>
+    </div>
+    <div class="small-6 medium-6 large-3 columns">
+      <div class="box text-align-left">
+		<h2>Whether you're considering investing in the value of a new mentoring program for your organization, or you're looking to invigorate or expand an existing program, MentorcliQ can help.</h2>
+		<h3>We've developed programs from the concept stage to implementation. More importantly, we continue to provide the analytics, technical support, and personal attention necessary to help our clients continue to realize a significant return of investment.</h3>
+      </div>
+    </div>
+    <hr/>
+  </section>
+  
+  <section id="clients-lifecycle" class="row">
+  	<div class="small-6 medium-6 large-4 columns">
+  		<h2 class="text-fuchsia">Formal Mentoring Lifecycle</h2>
+  		<h3>Our clients have diverse needs and include professional firms, universities, non-profits, and corporations. Client needs generally fall into one of the 5 stages of the formal mentoring cycle:<h3>
+  		<figure>
+  			<img id="clients-lifecycle-image" src="assets/images/img-clients-lifecycle.jpeg" alt="Formal Mentoring LifeCycle" >
+  			<figcaption>
+  				MentorcliQ provides corresponding software and services to support our clients in each and every stage of the formal mentoring lifecycle.<br/>
+  				Consulting - Configuring - Coaching - Scaling - Reporting
+  			</figcaption>
+  		</figure>
+		<hr/>
+		<h2 class="text-fuchsia">Featured on:</h2>
+		<img id="clients-jdsupra-image" src="assets/images/img-clients-jdsupra.jpeg" alt="JDSupra Business Advisor" >
+  	</div>
+  	<div class="small-6 medium-6 large-2 columns">
+  		<div class="lifecycle-step">
+  			<h2>Concept Stage</h2>
+  			<h3>Consulting<h3>
+  			<p>Valuing Formal Mentoring. Leadership understands the impact mentoring can have on their organization, but needs help creating the structure and accountability of the program.</p>
+  		</div>
+  		<div class="lifecycle-step">
+  			<h2>Creating Stage</h2>
+  			<h3>Configure Software<h3>
+  			<p>Getting the Structure Right. We help you use mentoring best practices aligned with your program’s goals developed during the concept stage to create an effective program structure.</p>
+  		</div>
+  		<div class="lifecycle-step">
+  			<h2>Pilot Stage</h2>
+  			<h3>Success Coaching<h3>
+  			<p>Calibrating with Participants. Beginning with a small group helps organizations learn how mentoring fits their culture, exposes mistakes quickly, and highlights successes to champion. </p>
+  		</div>
+  		<div class="lifecycle-step">
+  			<h2>Scale Stage</h2>
+  			<h3>Scaling Software<h3>
+  			<p>Getting the Message Right. Once the program structure supports success and accountability, it’s time to scale the program and effectively communicate its roll-out to the organization.</p>
+  		</div>
+  		<div class="lifecycle-step">
+  			<h2>Manage Stage</h2>
+  			<h3>Analysis Reporting<h3>
+  			<p>Making Sure it Happens. You’ve invested time and money, and now need to maximize your ROI by effectively tracking activitiy, holding people accountable, and celebrating successes!</p>
+  		</div>
+  	</div>
+  </section>
+  
+  <section id="solution-demo" class="row">
+	<div class="small-6 medium-6 large-6 columns text-align-left">
+  		<hr class="separator"></hr>
+    	<div id="solution-demo-container" class="text-align-center">
+    		<h2 class="text-fuchsia text-align-center">Contact us for more information or to request a demo.</h2>
+	      	<a href="#" title="Contact" class="button box-purple text-white">Contact</a>
+    	</div>
+	    <hr class="separator"></hr>
+  	</div>
+  </section>
+
+  <footer class="box-purple">
+    <div class="row">
+      <img src="assets/images/img-white-logo-mentorcliq.png" title="MentorcliQ" class="small-3 large-1 columns">
+    </div>
+  </footer>
+    
+    <script src="js/vendor/jquery.js"></script>    
+  </body>
+</html>
+
+<script>
+	function adjustBoxSize() {
+		var maxHeight = 0;
+   		$('.solution-where-item').each(function() {
+   			var elementHeight = parseInt($(this).height());
+   			if( elementHeight > maxHeight){
+   				maxHeight = elementHeight;
+   			}
+   		});
+   		
+   		$('.solution-where-item').height(maxHeight);
+	}
+	$(document).ready(function() {
+		adjustBoxSize();
+	});
+	$(window).resize(function() {
+		adjustBoxSize();
+	});
+</script>
