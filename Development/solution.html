@@ -227,10 +227,10 @@
     </div>
   </section>
   
-  <section id="solution-demo" class="row">
+  <section class="demo row">
 	<div class="small-6 medium-6 large-6 columns text-align-left">
   		<hr class="separator"></hr>
-    	<div id="solution-demo-container" class="text-align-center">
+    	<div class="demo-container text-align-center">
     		<h2 class="text-fuchsia text-align-center">Contact us for more information or to request a demo.</h2>
 	      	<a href="#" title="Contact" class="button box-purple text-white">Contact</a>
     	</div>
@@ -240,7 +240,7 @@
 
   <footer class="box-purple">
     <div class="row">
-      <img src="assets/images/img-white-logo-mentorcliq.png" title="MentorcliQ" class="small-3 large-1 columns">
+      <img src="assets/images/img-white-logo-mentorcliq.png" title="MentorcliQ" class="small-2 medium-1 large-1 columns">
     </div>
   </footer>
     
@@ -250,6 +250,8 @@
 
 <script>
 	function adjustBoxSize() {
+		$('.solution-where-item').css('height', '');
+	
 		var maxHeight = 0;
    		$('.solution-where-item').each(function() {
    			var elementHeight = parseInt($(this).height());

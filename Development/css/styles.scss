@@ -545,9 +545,10 @@ section{
 		position: relative;
 
 		h3{
-			bottom: 18%;
-			left: 1.5em;
 			position: absolute;
+			bottom: 30%;
+			left: 1.5em;
+			margin: 0px;
 		}
 	}
 }
@@ -681,9 +682,8 @@ section{
 	}
 }
 
-#solution-demo{
-	
-	#solution-demo-container{
+.demo{	
+	.demo-container{
 		display: inline-block;
 		float: left;
 		width: 80%;
@@ -785,6 +785,8 @@ section{
 //		Contact
 
 #contact-contact-info{
+	margin-top: 1em;
+	
 	a{
 		color: black;
 		text-decoration: none;
@@ -809,10 +811,10 @@ section{
 	p{			
 		border-left: 0px;
 	}
-	hr{
-		border: 1px solid $color-light-gray;
-		margin: 2em 0em;
-		width: 100%;		
+	
+	#contact-headquarter-address{
+		padding: 1em;
+		border-bottom: 3px solid $color-light-gray;
 	}
 }
 
@@ -830,7 +832,7 @@ section{
 			margin-right: 0%;
 			padding: 0px;
 			vertical-align: top;
-			width: 48%;
+			width: 100%;
 		}
 
 		fieldset:first-child{
@@ -840,7 +842,7 @@ section{
 		input[type=text], input[type=email], input[type=tel]{
 			border: 1px solid $color-light-gray;
 			border-radius: 5px;
-			margin: 1em 0em;
+			margin: 0.8em 0em;
 			padding: 0.8rem 0.8rem 0.8rem 0.6em;					
 			width: 100%;
 		}
@@ -951,6 +953,20 @@ section{
 	
 	// The solution
 	
+	#section-header{
+		margin-bottom: 2rem;
+
+		div{
+			position: relative;
+
+			h3{
+				position: absolute;
+				bottom: 42%;
+				left: 1.5em;
+			}
+		}
+	}
+	
 	#solution-how{
 		#solution-how-statistics, #solution-how-statistics-2{
 			.box{
@@ -958,6 +974,22 @@ section{
 			}
 		}		
 
+	}
+	
+	// Contact us
+	
+	#contact-main-container{
+		#contact-form{	
+			fieldset{
+				width: 48%;
+			}
+		}
+	}
+	
+	#contact-headquarter-info{	
+		#contact-headquarter-address{
+			padding: 0em;
+		}
 	}
 }
 
@@ -1037,12 +1069,42 @@ section{
 	
 	// The solution
 	
+	#section-header{
+		margin-bottom: 2rem;
+
+		div{
+			position: relative;
+
+			h3{
+				position: absolute;
+				bottom: 42%;
+				left: 1.5em;
+			}
+		}
+	}
+	
 	#solution-how{
 		#solution-how-statistics, #solution-how-statistics-2{
 			.box{
 				min-height: 200px;
 			}
 		}		
+	}
+	
+	// Contact us
+	
+	#contact-main-container{
+		#contact-form{	
+			fieldset{
+				width: 48%;
+			}
+		}
+	}
+	
+	#contact-headquarter-info{	
+		#contact-headquarter-address{
+			padding: 0em;
+		}
 	}
 }
 
