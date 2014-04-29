@@ -177,6 +177,13 @@ h4{
 	font-weight: 500;
 }
 
+hr{
+	border: 0;
+	background-color: $color-medium-gray;
+	height: 2px;
+	width: 100%;
+}
+
 header{	
 	border-bottom: solid $color-deep-purple 10px;		
 }
@@ -738,13 +745,6 @@ section{
 		}
 	}	
 
-	#clients{
-		img{
-			display: block;
-			margin: 0em auto;
-		}
-	}
-
 	.lifecycle-step{
 		background-color: $color-light-gray;
 		margin-top: 1em;
@@ -779,7 +779,12 @@ section{
 
 }
 
-
+.clients{
+	img{
+		display: block;
+		margin: 0em auto;
+	}
+}
 
 
 //		Contact
