@@ -714,24 +714,69 @@ section{
 
 //		Our Clients
 
-#clients-lifecycle{
+#clients-lifecycle{	
+
 	h3{
 		width: 95%;
 	}
 	
 	figure{
-	text-align: center;
+		text-align: center;
 	
-		figcaption{
-			width: 90%;
-			margin-top: 4em;
-			
+		figcaption{									
 			color: $color-dark-gray;
 			font-family: 'Roboto';
 			font-weight: 300;	
 			font-size: 12px;
+			margin-top: 4em;
+			width: 90%;
+
+			span{
+				display: block;
+				margin-top: 1em;
+			}
+		}
+	}	
+
+	#clients{
+		img{
+			display: block;
+			margin: 0em auto;
 		}
 	}
+
+	.lifecycle-step{
+		background-color: $color-light-gray;
+		margin-top: 1em;
+		padding: 0.6em 0.85em;		
+		position: relative;
+
+		h1,h2,h3,h4{
+			display: inline-block;
+			margin: 0em;
+		}
+
+		h2{
+			font-size: 22px;
+		}
+
+		p{
+			border-left: none;
+			padding-left: 0em;
+		}
+
+		.arrow-right{
+			position: absolute;		
+			border-top: 9px solid transparent;
+			border-bottom: 9px solid transparent;		
+			border-left: 9px solid white;
+			height: 0; 
+			left: 0em;
+			top: 0.7em;
+			width: 0;
+		}	
+	}
+
 }
 
 

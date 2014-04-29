@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 *	Author: Luis Antonio Sánchez
 *	Version: 1.0
@@ -479,12 +480,40 @@ section {
 #clients-lifecycle figure {
   text-align: center; }
   #clients-lifecycle figure figcaption {
-    width: 90%;
-    margin-top: 4em;
     color: #939393;
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 12px; }
+    font-size: 12px;
+    margin-top: 4em;
+    width: 90%; }
+    #clients-lifecycle figure figcaption span {
+      display: block;
+      margin-top: 1em; }
+#clients-lifecycle #clients img {
+  display: block;
+  margin: 0em auto; }
+#clients-lifecycle .lifecycle-step {
+  background-color: #dadada;
+  margin-top: 1em;
+  padding: 0.6em 0.85em;
+  position: relative; }
+  #clients-lifecycle .lifecycle-step h1, #clients-lifecycle .lifecycle-step h2, #clients-lifecycle .lifecycle-step h3, #clients-lifecycle .lifecycle-step h4 {
+    display: inline-block;
+    margin: 0em; }
+  #clients-lifecycle .lifecycle-step h2 {
+    font-size: 22px; }
+  #clients-lifecycle .lifecycle-step p {
+    border-left: none;
+    padding-left: 0em; }
+  #clients-lifecycle .lifecycle-step .arrow-right {
+    position: absolute;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 9px solid white;
+    height: 0;
+    left: 0em;
+    top: 0.7em;
+    width: 0; }
 
 #contact-contact-info a {
   color: black;
