@@ -24,8 +24,8 @@
         </a>             
       <nav id="global-navigation" class="small-6 medium-3 large-2 medium-offset-1 large-offset-1 columns">
         <ul>
-          <li><a href="solution.html" title ="The Solution">The Solution</a></li>
-          <li><a href="clients.html" title ="Our Clients">Our Clients</a></li>
+          <li><a href="solution.html" title ="The Solution">The Solution</a></li><span class="show-for-medium-up">|</span>
+          <li><a href="clients.html" title ="Our Clients">Our Clients</a></li><span class="show-for-medium-up">|</span>
           <li><a href="contact.html" title ="Contact Us" class="selected">Contact Us</a></li>
         </ul>
       </nav>
@@ -141,6 +141,19 @@
 </html>
 
 <script>
+
+  function showHideElements(){    
+    if($(window).width() > 640){      
+      $('#navigation-button').hide();
+      $('#global-navigation').show();
+      $('#global-navigation span').show();
+    }else{
+      $('#navigation-button').show();
+      $('#global-navigation').hide();
+      $('#global-navigation span').hide();
+    }
+  }
+
 	function adjustBoxSize() {
 		$('#contact-headquarter-info').children().each(function() {
    			$(this).css('height','');
@@ -150,7 +163,7 @@
    		$('#contact-headquarter-info').children().each(function() {
    			var elementHeight = parseInt($(this).height());
    			if( elementHeight > maxHeight){
-   				maxHeight = elementHeight;
+   				maxHeight = elementHeight-2;
    			}
    		});
    		
@@ -158,7 +171,14 @@
    			$(this).height(maxHeight);
    		});
 	}
-	$(window).resize(function() {
-		adjustBoxSize();
-	});
+	$(document).ready(function() {
+    $('#navigation-button').on('click', function(){
+      $('#global-navigation').slideToggle();
+    });
+    
+    $(window).resize(function() {
+      adjustBoxSize();
+      showHideElements();
+    });
+  });
 </script>

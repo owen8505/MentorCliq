@@ -236,6 +236,10 @@ section{
 	p {
 		width: 82%;
 	}
+
+	h1{
+		margin-top: 0px;
+	}
 	
 	h3 {
 		display: inline-block;
@@ -303,6 +307,10 @@ section{
 		text-align: left;
 		width: 100%;
 
+		span{
+			display: inline-block !important;
+		}
+
 		li{			
 			border-top: 1px solid $color-deep-purple;
 			display: inline-block;
@@ -310,6 +318,7 @@ section{
 			width: 100%;
 
 			a{
+				border-bottom: 2px solid white;
 				color: $color-deep-purple;
 				display: inline-block;				
 				padding-top: 1em;

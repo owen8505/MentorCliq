@@ -178,6 +178,8 @@ section {
   margin-bottom: 1.25em; }
   #description p {
     width: 82%; }
+  #description h1 {
+    margin-top: 0px; }
   #description h3 {
     display: inline-block; }
   #description a.button {
@@ -221,12 +223,15 @@ section {
   padding: 0px;
   text-align: left;
   width: 100%; }
+  #global-navigation ul span {
+    display: inline-block !important; }
   #global-navigation ul li {
     border-top: 1px solid #382f5b;
     display: inline-block;
     margin-bottom: 1em;
     width: 100%; }
     #global-navigation ul li a {
+      border-bottom: 2px solid white;
       color: #382f5b;
       display: inline-block;
       padding-top: 1em;
