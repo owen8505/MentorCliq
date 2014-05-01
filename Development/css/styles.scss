@@ -292,25 +292,27 @@ section{
 
 #global-navigation{
 
-	ul{		
+	ul{				
 		color: $color-deep-purple;
 		font-family: "Roboto";
 		font-size: 20px;
-		font-weight: 500;
-		display: block;
+		font-weight: 500;		
 		list-style: none;	
-		margin: 3rem 0px 3rem;
+		margin: 1rem 0px 1rem;
 		padding: 0px;	
 		text-align: left;
 		width: 100%;
 
 		li{			
+			border-top: 1px solid $color-deep-purple;
 			display: inline-block;
+			margin-bottom: 1em;
 			width: 100%;
 
 			a{
 				color: $color-deep-purple;
 				display: inline-block;				
+				padding-top: 1em;
 				padding-bottom: 4px;
 				text-decoration: none;
 			}
@@ -986,8 +988,7 @@ section{
 			color: $color-deep-purple;
 			font-family: "Roboto";
 			font-size: 13px;
-			font-weight: 500;
-			display: block;
+			font-weight: 500;			
 			list-style: none;	
 			margin: 3rem 0px 0px;
 			padding: 0px;	
@@ -995,6 +996,7 @@ section{
 			width: 100%;
 
 			li{			
+				border-top: none;
 				display: inline-block;
 				width: 30%;
 
