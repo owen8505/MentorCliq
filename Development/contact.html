@@ -120,6 +120,23 @@
   </footer>
     
     <script src="js/vendor/jquery.js"></script>    
+    <?php if (isset($_GET['send'])) : ?>
+      <div id="myModal" class="modal show fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+          <h3 id="myModalLabel">Thanks!</h3>
+        </div>
+        <div class="modal-body">
+          <p>We're excited to hear from you, and we'll be in touch!</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+      </div>
+      <script>
+        $("#myModal").modal('show');
+      </script>
+      <?php endif; ?>
   </body>
 </html>
 
