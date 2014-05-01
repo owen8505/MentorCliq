@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="css/foundation.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/lib/prefixfree.min.js"></script>
   </head>
@@ -208,24 +207,30 @@
         $("#myModal").modal('show');
       </script>
     <?php endif; ?>
-	
   </body>
 </html>
 
 <script>
   
-  $(document).ready(function(){    
-    if($(window).width() > 640){
+  function showHideElements(){    
+    if($(window).width() > 640){      
       $('#navigation-button').hide();
       $('#global-navigation').show();
     }else{
       $('#navigation-button').show();
-      $('#global-navigation').show();
+      $('#global-navigation').hide();
     }
+  }
+
+  $(document).ready(function(){        
 
     $('#navigation-button').on('click', function(){
       $('#global-navigation').slideToggle();
-
     });
+
+    $(window).resize(function() {
+      showHideElements();
+    });
+
   });  
 </script>
