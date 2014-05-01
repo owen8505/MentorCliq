@@ -224,7 +224,7 @@ section {
   text-align: left;
   width: 100%; }
   #global-navigation ul span {
-    display: inline-block !important; }
+    display: none; }
   #global-navigation ul li {
     border-top: 1px solid #382f5b;
     display: inline-block;
@@ -669,6 +669,8 @@ section {
     padding: 0px;
     text-align: center;
     width: 100%; }
+    #global-navigation ul span {
+      display: inline-block; }
     #global-navigation ul li {
       border-top: none;
       display: inline-block;

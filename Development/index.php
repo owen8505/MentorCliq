@@ -25,8 +25,8 @@
         </a>        
       <nav id="global-navigation" class="small-6 medium-3 large-2 medium-offset-1 large-offset-1 columns">
         <ul>
-          <li><a href="solution.html" title ="The Solution">The Solution</a></li>
-          <li><a href="clients.html" title ="Our Clients">Our Clients</a></li>
+          <li><a href="solution.html" title ="The Solution">The Solution</a></li><span>|</span>
+          <li><a href="clients.html" title ="Our Clients">Our Clients</a></li><span>|</span>
           <li><a href="contact.html" title ="Contact Us">Contact Us</a></li>
         </ul>
       </nav>      
@@ -212,8 +212,9 @@
 
 <script>
   
-  function showHideElements(){    
-    if($(window).width() > 640){      
+  function showHideElements(){   
+  console.log(screen.width)  
+    if(screen.width > 640){      
       $('#navigation-button').hide();
       $('#global-navigation').show();
     }else{

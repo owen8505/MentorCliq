@@ -22,8 +22,7 @@ $contact_demo = ($contact_demo == 'on' ? 'yes' : 'no');
 
      
 // create email body and send it    
-//$to = 'phil.george@mentorcliq.com';
-$to = 'luis.sanchez.franco@gmail.com';
+$to = 'phil.george@mentorcliq.com';
 $email_subject = "Contact form submitted by: $contact_name";
 $email_body = "You have received a new message.\n\n" .
               "Name: $contact_name \n" .

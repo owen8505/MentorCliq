@@ -308,7 +308,7 @@ section{
 		width: 100%;
 
 		span{
-			display: inline-block !important;
+			display: none;
 		}
 
 		li{			
@@ -318,12 +318,12 @@ section{
 			width: 100%;
 
 			a{
-				border-bottom: 2px solid white;
+				border-bottom: 2px solid white;				
 				color: $color-deep-purple;
 				display: inline-block;				
 				padding-top: 1em;
 				padding-bottom: 4px;
-				text-decoration: none;
+				text-decoration: none;				
 			}
 
 			a:hover{
@@ -1001,6 +1001,10 @@ section{
 			padding: 0px;	
 			text-align: center;
 			width: 100%;
+
+			span{
+				display: inline-block;
+			}
 
 			li{			
 				border-top: none;
