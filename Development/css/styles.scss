@@ -611,6 +611,7 @@ section{
 #solution-how{
 
 	.solution-how-item{
+		padding-left: 0px;
 		.left{
 			display: inline-block;
 			text-align: center;
@@ -642,7 +643,7 @@ section{
 			p{
 				border-left: none;
 			}
-		}
+		}			
 
 	}
 
@@ -689,9 +690,6 @@ section{
 		}
 	}
 	
-	.box{		
-		
-	}
 
 	.box:last-child{	
 		margin-bottom: 1em;	

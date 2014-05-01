@@ -17,7 +17,7 @@
     
   <header>
     <div class="row">      
-        <a id="logo" href="index.html" title="Home" class="small-5 medium-2 large-3 columns">
+        <a id="logo" href="index.php" title="Home" class="small-5 medium-2 large-3 columns">
           <img src="assets/images/img-logo-mentorcliq.svg" alt="MentorcliQ">
         </a>      
         <a id="navigation-button" title="Navigation button" class="show-for-small-only small-1 columns">
