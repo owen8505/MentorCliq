@@ -257,3 +257,10 @@ button.close {
 .fade.in {
   opacity: 1;
 }
+
+
+@media only screen and (maz-width: 40em) {
+  .modal{
+    width: 360px;
+  }
+}
