@@ -28,7 +28,7 @@
           <li><a href="clients.html" title ="Our Clients">Our Clients</a></li>
           <li><a href="contact.html" title ="Contact Us">Contact Us</a></li>
         </ul>
-      </nav>
+      </nav>      
     </div>
   </header>
 
@@ -193,7 +193,11 @@
 <script>
   
   $(document).ready(function(){
-    $('#navigation-button').on('click', function(){      
+    
+
+    $('#navigation-button').on('click', function(){
+      $('#global-navigation').slideToggle();
+
     });
   });  
 </script>
