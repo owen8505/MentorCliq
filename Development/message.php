@@ -18,6 +18,8 @@ $contact_title = $_POST['contact-title'];
 $contact_message = $_POST['contact-message'];
 $contact_demo = $_POST['contact-demo'];
 
+$contact_demo = ($contact_demo == 'on' ? 'yes' : 'no');
+
      
 // create email body and send it    
 //$to = 'phil.george@mentorcliq.com';
