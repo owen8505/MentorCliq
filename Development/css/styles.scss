@@ -280,28 +280,39 @@ section{
 	}
 }
 
+#navigation-button{
+		
+	height: 100%;
+	margin-top: 1.5em;
+
+	img{		
+		width: 30px;
+	}	
+}
+
 #global-navigation{
+
 	ul{		
 		color: $color-deep-purple;
 		font-family: "Roboto";
-		font-size: 13px;
+		font-size: 20px;
 		font-weight: 500;
-		display: none;
+		display: block;
 		list-style: none;	
-		margin: 3rem 0px 0px;
+		margin: 3rem 0px 3rem;
 		padding: 0px;	
-		text-align: center;
+		text-align: left;
 		width: 100%;
 
 		li{			
 			display: inline-block;
-			width: 30%;
+			width: 100%;
 
 			a{
 				color: $color-deep-purple;
 				display: inline-block;				
 				padding-bottom: 4px;
-				text-decoration: none;				
+				text-decoration: none;
 			}
 
 			a:hover{
@@ -313,7 +324,7 @@ section{
 			}
 		}
 
-	}
+	}	
 }
 
 #lifecycle{
@@ -607,7 +618,7 @@ section{
 		.right{
 			display: inline-block;
 			vertical-align: top;
-			width: 65%;
+			width: 60%;
 
 			h2{
 				margin-bottom: 0.6em;
@@ -667,9 +678,13 @@ section{
 		}
 	}
 	
-	.box{
-		min-height: 210px;
-		max-height: none;
+	.box{		
+		
+	}
+
+	.box:last-child{	
+		margin-bottom: 1em;	
+		max-height: none;		
 	}
 }
 
@@ -821,8 +836,7 @@ section{
 			width: 0;
 		}
 
-		.first-sentence{
-			font-style: italic;
+		.first-sentence{			
 			font-weight: bold;
 		}	
 	}
@@ -838,7 +852,7 @@ section{
 	a{		
 		border-left: 1px solid $color-deep-purple;
 		color: $color-deep-purple;
-		font-size: 12px;
+		font-size: 14px;
 		font-weight: 500;
 		padding-left: 10px;
 		display: block;
@@ -962,9 +976,44 @@ section{
 }
 
 @media only screen and (min-width: 40.063em) {
+
+	#navigation-button{
+		display: none;	
+	}	
+
 	#global-navigation{
-		ul{	
+		ul{		
+			color: $color-deep-purple;
+			font-family: "Roboto";
+			font-size: 13px;
+			font-weight: 500;
 			display: block;
+			list-style: none;	
+			margin: 3rem 0px 0px;
+			padding: 0px;	
+			text-align: center;
+			width: 100%;
+
+			li{			
+				display: inline-block;
+				width: 30%;
+
+				a{
+					color: $color-deep-purple;
+					display: inline-block;				
+					padding-bottom: 4px;
+					text-decoration: none;				
+				}
+
+				a:hover{
+					border-bottom: 2px solid $color-deep-purple;
+				}
+
+				a.selected{
+					border-bottom: 2px solid $color-deep-purple;	
+				}
+			}
+
 		}
 	}
 
@@ -1099,11 +1148,6 @@ section{
 }
 
 @media only screen and (min-width: 64.063em) {
-	#global-navigation{
-		ul{	
-			display: block;
-		}
-	}
 
 	.slider{	
 		position: relative;
@@ -1194,7 +1238,8 @@ section{
 				min-height: 200px;
 				max-height: none;
 			}
-		}		
+		}
+
 	}
 	
 	// Contact us
@@ -1213,8 +1258,7 @@ section{
 		}
 	}
 
-	// Our Clients
-	//Our Clients
+	// Our Clients	
 	.clients{
 		img{
 			display: inline-block;
@@ -1224,7 +1268,7 @@ section{
 		a{		
 			border-left: 1px solid $color-deep-purple;
 			color: $color-deep-purple;
-			font-size: 12px;
+			font-size: 14px;
 			font-weight: 500;
 			padding-left: 10px;
 			display: inline-block;
@@ -1232,7 +1276,7 @@ section{
 			margin-left: 4em;
 			text-decoration: none;
 			vertical-align: middle;
-			width: 30%;
+			width: 40%;
 		}
 
 		a:hover{

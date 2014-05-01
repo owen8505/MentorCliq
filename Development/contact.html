@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MentorcliQ | The Solution</title>    
+    <title>MentorcliQ | Contact Us</title>    
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -56,20 +56,20 @@
     <div id="contact-left-section" class="small-6 medimum-6 large-4 columns">
       <div id="contact-form">
         <h1 class="text-purple">Contact Us</h1>
-        <form id="form">
+        <form id="form" action="/message.php" method="POST">          
           <div>
             <fieldset>
-              <input id="contact-name" name="contact-name" type="text" placeholder="Name *">
-              <input id="contact-email" name="contact-email" type="email" placeholder="Email *">
-              <input id="contact-phone" name="contact-phone" type="tel" placeholder="Phone *">
-              <input id="contact-organization" name="contact-organization" type="text" placeholder="Organization">
-              <input id="contact-title" name="contact-title" type="text" placeholder="Title">
+              <input name="contact-name" type="text" placeholder="Name *">
+              <input name="contact-email" type="email" placeholder="Email *">
+              <input name="contact-phone" type="tel" placeholder="Phone *">
+              <input name="contact-organization" type="text" placeholder="Organization">
+              <input name="contact-title" type="text" placeholder="Title">
             </fieldset>
             <fieldset>
               <legend>Please share any specific details about your program and your questions or comments:</legend>
-              <textarea></textarea>
-              <input id="contact-demo" name="contact-demo" type="radio"><span>I would like to to schedule a demo.</span>
-              <input id="contact-submit" name="contact-submit" type="submit" value="Contact Us" class="button">
+              <textarea name="contact-message"></textarea>
+              <input name="contact-demo" type="radio"><span>I would like to to schedule a demo.</span>
+              <input name="contact-submit" type="submit" value="Contact Us" class="button">
             </fieldset>            
           </div>
         </form>
