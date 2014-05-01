@@ -162,7 +162,7 @@ section {
     .slider .slider-header h2 {
       border-bottom: 1px solid #382f5b;
       font-family: "RobotoSlab";
-      font-size: 29px;
+      font-size: 27px;
       font-weight: normal;
       margin: 2px 0px 10px;
       padding-bottom: 0.15em; }
@@ -208,7 +208,7 @@ section {
   margin: 1rem 0rem; }
 
 #navigation-button {
-  height: 100%;
+  text-align: center;
   margin-top: 1.5em; }
   #navigation-button img {
     width: 30px; }
@@ -240,6 +240,35 @@ section {
     #global-navigation ul li a:hover {
       border-bottom: 2px solid #382f5b; }
     #global-navigation ul li a.selected {
+      border-bottom: 2px solid #382f5b; }
+
+#global-navigation-small ul {
+  color: #382f5b;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 500;
+  list-style: none;
+  margin: 1rem 0px 1rem;
+  padding: 0px;
+  text-align: left;
+  width: 100%; }
+  #global-navigation-small ul span {
+    display: none; }
+  #global-navigation-small ul li {
+    border-top: 1px solid #382f5b;
+    display: inline-block;
+    margin-bottom: 1em;
+    width: 100%; }
+    #global-navigation-small ul li a {
+      border-bottom: 2px solid white;
+      color: #382f5b;
+      display: inline-block;
+      padding-top: 1em;
+      padding-bottom: 4px;
+      text-decoration: none; }
+    #global-navigation-small ul li a:hover {
+      border-bottom: 2px solid #382f5b; }
+    #global-navigation-small ul li a.selected {
       border-bottom: 2px solid #382f5b; }
 
 #lifecycle {

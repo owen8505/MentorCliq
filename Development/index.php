@@ -23,7 +23,14 @@
         <a id="navigation-button" title="Navigation button" class="show-for-small-only small-1 columns">
           <img src="assets/images/img-icon-menu.png" alt="Navigation menu">
         </a>        
-      <nav id="global-navigation" class="small-6 medium-3 large-2 medium-offset-1 large-offset-1 columns">
+      <nav id="global-navigation" class="small-6 medium-3 large-2 medium-offset-1 large-offset-1 hide-for-small-only columns">
+        <ul>
+          <li><a href="solution.html" title ="The Solution">The Solution</a></li><span>|</span>
+          <li><a href="clients.html" title ="Our Clients">Our Clients</a></li><span>|</span>
+          <li><a href="contact.html" title ="Contact Us">Contact Us</a></li>
+        </ul>
+      </nav> 
+      <nav id="global-navigation-small" class="small-6 medium-3 large-2 medium-offset-1 large-offset-1 columns">
         <ul>
           <li><a href="solution.html" title ="The Solution">The Solution</a></li><span>|</span>
           <li><a href="clients.html" title ="Our Clients">Our Clients</a></li><span>|</span>
@@ -210,27 +217,13 @@
   </body>
 </html>
 
-<script>
-  
-  function showHideElements(){   
-  console.log(screen.width)  
-    if(screen.width > 640){      
-      $('#navigation-button').hide();
-      $('#global-navigation').show();
-    }else{
-      $('#navigation-button').show();
-      $('#global-navigation').hide();
-    }
-  }
+<script>  
 
   $(document).ready(function(){        
-
+    $('#global-navigation-small').hide();
+    
     $('#navigation-button').on('click', function(){
-      $('#global-navigation').slideToggle();
-    });
-
-    $(window).resize(function() {
-      showHideElements();
+      $('#global-navigation-small').slideToggle();
     });
 
   });  
