@@ -36,6 +36,6 @@ $email_body = "You have received a new message.\n\n" .
 $headers = "From: contact@mentorcliq.com\n";
 $headers .= "Reply-To: $contact-email"; 
 mail($to,$email_subject,$email_body,$headers);
-header('Location: contact.html?send=true');
+header('Location: index.php?send=true');
 die();
 ?>
